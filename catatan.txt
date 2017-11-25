@@ -1,0 +1,19 @@
+Admin model/migrate bikin tabel
+
+- enumerasi	xx		- penggunaan x		- pegawai x model/migrate
+- komentar	x		- peraturan	x		- artikel x model/migrate
+- kontak	x		- ppkh x
+- kph		x		- sejarah x
+- organisasi x/		- tatabatas x
+- pcg		x		- tuspoksi x
+- pegawai	x		- verifikasi x
+- pelepasan	x		- visimisi x
+- pemanfaatanx		- wilayah x
+
+penggunaan php artisan migrate cuma 1 kali 
+	-kerjakan semua file model dan file migrations ---> php artisan migrate
+	Apabila terjadi kesalahan pada penulisan type data
+	maka file migrate perlu di reset dengan menggunakan perintah:
+	- php artisan migrate:reset
+	kemudian refresh file migrate untuk 
+	- php artisan migrate:refresh
