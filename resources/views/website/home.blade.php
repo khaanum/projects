@@ -1,181 +1,149 @@
-@extends('website.layout.app')
+@extends('website.layout.app3')
 
 @section('content')
-<!-- welcome -->
-	<div class="welcome">
-		<div class="container">
-			<div class="agileits-title">
-				<h3>Selamat Datang Di Website</h3>
-				<h3>BPKH Wilayah III Pontianak</h3>
-			</div>
-			<div class="welcome-agileinfo">
-				<div class="col-md-4 col-xs-6 welcome-grid agileits-w3layouts">
-					<div class="col-xs-2 welcome-grid-left">
-						<span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span>
-					</div>
-					<div class="col-xs-10 welcome-grid-right">
-						<h4>tiamet pharetra nunc </h4>
-						<p>Itaque earum rerum hic tenetur a sapiente delectus maiores alias phasellus</p>
-					</div>
-					<div class="clearfix"> </div>
-				</div>
-				<div class="col-md-4 col-xs-6 welcome-grid agileits-w3layouts">
-					<div class="col-xs-2 welcome-grid-left">
-						<span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
-					</div>
-					<div class="col-xs-10 welcome-grid-right">
-						<h4>Etiam pharetra</h4>
-						<p>Sapiente delectus reiciendis maiores alias phasellus mattis tellus dictum </p>
-					</div>
-					<div class="clearfix"> </div>
-				</div>
-				<div class="col-md-4 col-xs-6 welcome-grid agileits-w3layouts">
-					<div class="col-xs-2 welcome-grid-left">
-						<span class="glyphicon glyphicon-check" aria-hidden="true"></span>
-					</div>
-					<div class="col-xs-10 welcome-grid-right">
-						<h4>pharetra erat</h4>
-						<p>phasellus mattis tellus eget tellus dictum justo scelerisque eget sapiente </p>
-					</div>
-					<div class="clearfix"> </div>
-				</div>
-				<div class="col-md-4 col-xs-6 welcome-grid welcome-grid-bottom">
-					<div class="col-xs-2 welcome-grid-left">
-						<span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
-					</div>
-					<div class="col-xs-10 welcome-grid-right">
-						<h4>erat et nunc </h4>
-						<p>Maiores alias phasellus mattis tellus eget tellus dictum justo interdum </p>
-					</div>
-					<div class="clearfix"> </div>
-				</div>
-				<div class="col-md-4 col-xs-6 welcome-grid welcome-grid-bottom">
-					<div class="col-xs-2 welcome-grid-left">
-						<span class="glyphicon glyphicon-hourglass" aria-hidden="true"></span>
-					</div>
-					<div class="col-xs-10 welcome-grid-right">
-						<h4>tiamet pharetra nunc </h4>
-						<p>Itaque earum rerum hic tenetur a sapiente delectus maiores alias phasellus</p>
-					</div>
-					<div class="clearfix"> </div>
-				</div>
-				<div class="col-md-4 col-xs-6 welcome-grid welcome-grid-bottom">
-					<div class="col-xs-2 welcome-grid-left">
-						<span class="glyphicon glyphicon-time" aria-hidden="true"></span>
-					</div>
-					<div class="col-xs-10 welcome-grid-right">
-						<h4>Etiam pharetra</h4>
-						<p>Sapiente delectus reiciendis maiores alias phasellus mattis tellus dictum </p>
-					</div>
-					<div class="clearfix"> </div>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
-		</div>
-	</div>
-	<!-- //welcome -->
-	<!-- skills -->
-	<div class="skills w3-agileits">
-		<div class="container">
-			<div class="skills-agileinfo">
-				<div class="col-md-6 skills-w3left">
-					<h4><b>Sekilas Tentang Kalimantan Barat</b></h4>
-					<div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
-						<ul id="myTab" class="nav nav-tabs" role="tablist">
-							<li role="presentation" class="active"><a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">Kal-Bar</a></li>
-							<li role="presentation"><a href="#carl" role="tab" id="carl-tab" data-toggle="tab" aria-controls="carl">Geografis</a></li>
-							<li role="presentation"><a href="#james" role="tab" id="james-tab" data-toggle="tab" aria-controls="james">Wilayah</a></li>
-						</ul>
-						<div id="myTabContent" class="tab-content">
-							<div role="tabpanel" class="tab-pane fade in active" id="home" aria-labelledby="home-tab">
-								<div class="tabcontent-grids">
-									<p>Kalimantan Barat (KalBar), salah satu provinsi di Indonesia yang terletak dipulau Kalimantan, merupakan provinsi terluas ke empat setelah Papua, Kalimantan Timur dan Kalimantan Tengah dengan luas wilayah 146.807 km2 atau 7.53% luas Indonesia.</p>
+<section id="content">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="row">
+					<div class="col-lg-3">
+						<div class="box">
+							<div class="box-gray aligncenter">
+								<h4>Fully responsive</h4>
+								<div class="icon">
+								<i class="fa fa-desktop fa-3x"></i>
 								</div>
-							</div>
-							<div role="tabpanel" class="tab-pane fade" id="carl" aria-labelledby="carl-tab">
-								<div class="tabcontent-grids">
+								<p>
+								 Voluptatem accusantium doloremque laudantium sprea totam rem aperiam.
+								</p>
 									
-									<p>Kalimantan Barat terletak tepat di garis Khatulistiwa dengan titik koordinat pada .................... Tidak salah jika tugu nol derajat dibangun di tanah Kalimantan Barat, karena letaknya memang melewati tugu. </p>
-								
-								</div>
 							</div>
-							<div role="tabpanel" class="tab-pane fade" id="james" aria-labelledby="james-tab">
-								<div class="tabcontent-grids">
-									<p>Wilayah Administratif Kalimantan Barat terdiri dari 2 kota dan 12 kabupaten, terbagi dalam 136 kecamatan dan 1445 kelurahan/desa. </p>
-
-								</div>
+							<div class="box-bottom">
+								<a href="#">Learn more</a>
 							</div>
 						</div>
 					</div>
+					<div class="col-lg-3">
+						<div class="box">
+							<div class="box-gray aligncenter">
+								<h4>Modern Style</h4>
+								<div class="icon">
+								<i class="fa fa-pagelines fa-3x"></i>
+								</div>
+								<p>
+								 Voluptatem accusantium doloremque laudantium sprea totam rem aperiam.
+								</p>
+									
+							</div>
+							<div class="box-bottom">
+								<a href="#">Learn more</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3">
+						<div class="box">
+							<div class="box-gray aligncenter">
+								<h4>Customizable</h4>
+								<div class="icon">
+								<i class="fa fa-edit fa-3x"></i>
+								</div>
+								<p>
+								 Voluptatem accusantium doloremque laudantium sprea totam rem aperiam.
+								</p>
+									
+							</div>
+							<div class="box-bottom">
+								<a href="#">Learn more</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3">
+						<div class="box">
+							<div class="box-gray aligncenter">
+								<h4>Valid HTML5</h4>
+								<div class="icon">
+								<i class="fa fa-code fa-3x"></i>
+								</div>
+								<p>
+								 Voluptatem accusantium doloremque laudantium sprea totam rem aperiam.
+								</p>
+									
+							</div>
+							<div class="box-bottom">
+								<a href="#">Learn more</a>
+							</div>
+						</div>
+					</div>
 				</div>
-				<h4><b>Kawasan Hutan</b></h4>
-				<div class="col-md-6 skills-w3right bar_group">
-					<p>Kawasan Hutan adalah wilayah tertenu yang ditunjuk atau ditetapkan oleh Pemerintah untuk ditetapkan keberadaannya sebagai hutan tetap. Pulau Kalimantan merupakan kawasan dengan luasan wilayah hutan yang menjadi bagian dari paru-paru dunia, termasuk didalamnya wilayah Kalimantan Barat yang terdapat diujung paling barat dari Pulau Kalimantan.</p>
-				</div>
-				<!-- bar-js -->
-				<script src="js/bars.js"></script>
-				<!-- bar-js -->
-				<div class="clearfix"> </div>
 			</div>
 		</div>
-	</div>
-	<!-- //skills -->
-	<!-- news -->
-	<div class="news-w3layouts">
-		<div class="container">
-			<div class="agileits-title">
-				<h3>Berita Terbaru</h3>
-			</div>
-			<!--<div class="news-agileinfo w3-agileits">
-				<div class="col-md-4 news-w3lgrids">
-					<h4><span>13/16</span>December</h4>
-					<p>Cras justo odioda pibus facilisis dignissimos Sed ut perspiciatis unde omnis iste natus error sit voluptatem inventore veritatis</p>
-				</div>
-				<div class="col-md-4 news-w3lgrids">
-					<h4><span>20/16</span>November</h4>
-					<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem inventore veritatis Cras justo odioda pibus facilisis dignissimos </p>
-				</div>
-				<div class="col-md-4 news-w3lgrids">
-					<h4><span>05/16</span>November</h4>
-					<p>Facilisis dignissimos Sed ut perspiciatis unde omnis iste natus error sit voluptatem inventore veritatis cras justo odioda pibus </p>
-				</div>
-				<div class="clearfix"> </div>
-			</div>-->
-			<div class="popular-posts">
-				<!--<h4 class="w3ls-title">Popular Posts</h4>-->
-				<div class="popular-posts-grids">
-					<div class="col-md-3 col-sm-3 col-xs-6 popular-posts-grid">
-						<div class="popular-posts-grid1">
-							<a href="single.html"><img src="{{ asset ('webpage/images/g3.jpg')}}" alt=" " class="img-responsive"></a>
-							<h4><a href="single.html">dolori perior</a></h4>
-							<p>Itaque earum rerum hic tenetur a sapiente delectus.</p>
-						</div>
-					</div>
-					<div class="col-md-3 col-sm-3 col-xs-6 popular-posts-grid">
-						<div class="popular-posts-grid1">
-							<a href="single.html"><img src="{{ asset ('webpage/images/g4.jpg')}}" alt=" " class="img-responsive"></a>
-							<h4><a href="single.html">rerum tenetur</a></h4>
-							<p>Itaque earum rerum hic tenetur a sapiente delectus.</p>
-						</div>
-					</div>
-					<div class="col-md-3 col-sm-3 col-xs-6 popular-posts-grid">
-						<div class="popular-posts-grid1">
-							<a href="single.html"><img src="{{ asset ('webpage/images/g5.jpg')}}" alt=" " class="img-responsive"></a>
-							<h4><a href="single.html">saepe eveniet </a></h4>
-							<p>Itaque earum rerum hic tenetur a sapiente delectus.</p>
-						</div>
-					</div>
-					<div class="col-md-3 col-sm-3 col-xs-6 popular-posts-grid">
-						<div class="popular-posts-grid1">
-							<a href="single.html"><img src="{{ asset ('webpage/images/g6.jpg')}}" alt=" " class="img-responsive"></a>
-							<h4><a href="single.html">ipsum tenetur</a></h4>
-							<p>Itaque earum rerum hic tenetur a sapiente delectus.</p>
-						</div>
-					</div>
-					<div class="clearfix"> </div>
+		<!-- divider -->
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="solidline">
 				</div>
 			</div>
+		</div>
+		<!-- end divider -->
+		<!-- Portfolio Projects -->
+		<div class="row">
+			<div class="col-lg-12">
+				<h4 class="heading">Recent Works</h4>
+				<div class="row">
+					<section id="projects">
+					<ul id="thumbs" class="portfolio">
+						<!-- Item Project and Filter Name -->
+						<li class="col-lg-3 design" data-id="id-0" data-type="web">
+						<div class="item-thumbs">
+						<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+						<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Work 1" href="img/works/1.jpg">
+						<span class="overlay-img"></span>
+						<span class="overlay-img-thumb font-icon-plus"></span>
+						</a>
+						<!-- Thumb Image and Description -->
+						<img src="img/works/1.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
+						</div>
+						</li>
+						<!-- End Item Project -->
+						<!-- Item Project and Filter Name -->
+						<li class="item-thumbs col-lg-3 design" data-id="id-1" data-type="icon">
+						<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+						<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Work 2" href="img/works/2.jpg">
+						<span class="overlay-img"></span>
+						<span class="overlay-img-thumb font-icon-plus"></span>
+						</a>
+						<!-- Thumb Image and Description -->
+						<img src="img/works/2.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
+						</li>
+						<!-- End Item Project -->
+						<!-- Item Project and Filter Name -->
+						<li class="item-thumbs col-lg-3 photography" data-id="id-2" data-type="illustrator">
+						<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+						<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Work 3" href="img/works/3.jpg">
+						<span class="overlay-img"></span>
+						<span class="overlay-img-thumb font-icon-plus"></span>
+						</a>
+						<!-- Thumb Image and Description -->
+						<img src="img/works/3.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
+						</li>
+						<!-- End Item Project -->
+						<!-- Item Project and Filter Name -->
+						<li class="item-thumbs col-lg-3 photography" data-id="id-2" data-type="illustrator">
+						<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+						<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Work 4" href="img/works/4.jpg">
+						<span class="overlay-img"></span>
+						<span class="overlay-img-thumb font-icon-plus"></span>
+						</a>
+						<!-- Thumb Image and Description -->
+						<img src="img/works/4.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
+						</li>
+						<!-- End Item Project -->
+					</ul>
+					</section>
+				</div>
+			</div>
+		</div>
 
-		</div>
 	</div>
+	</section>
 @endsection

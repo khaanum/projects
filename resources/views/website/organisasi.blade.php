@@ -1,144 +1,242 @@
-@extends('website.layout.app2')
+@extends('website.layout.app4')
 
-@section('page-title')
-	Struktur Organisasi
-@endsection
 
 @section('content')
 
-<!-- Sejarah -->
-	<div class="about agileits">
-		<div class="container">
-			<div class="agileits-title">
-				<h3>Struktur Organisasi Balai Pemantapan Kawasan Hutan Wilayah III Pontianak</h3>
-			</div>
-			<div class="about-info">
-				<div class="col-md-12 about-grids">
-					<h4>Blanditiis praesentium deleniti atque corrupti quos </h4>
-					<p>Dignissimos at vero eos et accusamus et iusto odio ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecat officia deserunt mollitia laborum et dolorum fuga. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecat </p>
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe src="https://player.vimeo.com/video/44639534"></iframe>
-					</div>
-				</div>
-				
-				<div class="clearfix"> </div>
+<section id="inner-headline">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<ul class="breadcrumb">
+					<li><a href="#"><i class="fa fa-home"></i></a><i class="icon-angle-right"></i></li>
+					<li><a href="#">Profil</a><i class="icon-angle-right"></i></li>
+					<li class="active">Struktur Organisasi</li>
+				</ul>
 			</div>
 		</div>
 	</div>
-	<!-- //about -->
-	<!-- Stats -->
-	<div class="stats news-w3layouts">
-		<div class="container">
-			<div class="agileits-title">
-				<h3>Our Stats</h3>
-				<p>Mauris rutrum turpis eget tincidunt eleifend vestibulum condimentum mollis tellus eu magna laoreet.</p>
+	</section>
+	<section id="content">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4">
+				<h4>H1-H6 Heading style</h4>
+				<h1>Heading H1</h1>
+				<h2>Heading H2</h2>
+				<h3>Heading H3</h3>
+				<h4>Heading H4</h4>
+				<h5>Heading H5</h5>
+				<h6>Heading H6</h6>
 			</div>
-			<div class="stats-info agileits-w3layouts">
-				<div class="col-md-3 col-sm-3 col-xs-6 stats-grid">
-					<div class="stats-img">
-						<i class="fa fa-users" aria-hidden="true"></i>
-					</div>
-					<div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='157000' data-delay='.5' data-increment="100">157000</div>
-					<p>Happy Clients</p>
+			<div class="col-lg-4">
+				<h4>Example of paragraph</h4>
+				<p>
+					<strong>Lorem ipsum dolor sit amet</strong>, consetetur sadipscing elitr, sed diam non mod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+				</p>
+				<p class="lead">
+					At vero eos et accusam et justo duo dolores et eabum.
+				</p>
+				<p>
+					<em>
+					Consetetur sadipscing elitr, sed diam non mod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </em>
+				</p>
+				<p>
+					<small>
+					Consetetur sadipscing elitr, sed diam non mod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </small>
+				</p>
+			</div>
+			<div class="col-lg-4">
+				<h4>Float image in paragraph</h4>
+				<img src="img/dummies/dummy-1.jpg" alt="" class="align-left" />
+				<p>
+					 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam non mod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et eabum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet
+				</p>
+			</div>
+		</div>
+		<!-- divider -->
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="solidline">
 				</div>
-				<div class="col-md-3 col-sm-3 col-xs-6 stats-grid">
-					<div class="stats-img w3-agileits">
-						<i class="fa fa-calendar-check-o" aria-hidden="true"></i>
-					</div>
-					<div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='850' data-delay='8' data-increment="1">850</div>
-					<p>Our Events</p>
+			</div>
+		</div>
+		<!-- end divider -->
+		<!-- Descriptions -->
+		<div class="row">
+			<div class="col-lg-6">
+				<!-- Description -->
+				<h4>Description</h4>
+				<dl>
+					<dt>Description lists</dt>
+					<dd>A description list is perfect for defining terms.</dd>
+					<dt>Euismod</dt>
+					<dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+					<dd>Donec id elit non mi porta gravida at eget metus.</dd>
+					<dt>Malesuada porta</dt>
+					<dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+				</dl>
+			</div>
+			<!-- Horizontal Description -->
+			<div class="col-lg-6">
+				<h4>Horizontal Description</h4>
+				<dl class="dl-horizontal">
+					<dt>Description lists</dt>
+					<dd>A description list is perfect for defining terms.</dd>
+					<dt>Euismod</dt>
+					<dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+					<dd>Donec id elit non mi porta gravida at eget metus.</dd>
+					<dt>Malesuada porta</dt>
+					<dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+					<dt>Felis euismod semper eget lacinia</dt>
+					<dd>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</dd>
+				</dl>
+			</div>
+		</div>
+		<!-- divider -->
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="solidline">
 				</div>
-				<div class="col-md-3 col-sm-3 col-xs-6 stats-grid">
-					<div class="stats-img w3-agileits">
-						<i class="fa fa-briefcase" aria-hidden="true"></i>
-					</div>
-					<div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='80000' data-delay='.5' data-increment="100">80000</div>
-					<p>Projects</p>
+			</div>
+		</div>
+		<!-- end divider -->
+		<!-- Lists -->
+		<div class="row">
+			<!-- Unordered Lists -->
+			<div class="col-lg-3">
+				<h4>Unordered Lists</h4>
+				<ul>
+					<li>Lorem ipsum dolor sit amet</li>
+					<li>Consectetur adipiscing elit</li>
+					<li>Integer molestie lorem at massa</li>
+					<li>Facilisis in pretium nisl aliquet</li>
+					<li>Nulla volutpat aliquam velit
+					<ul>
+						<li>Phasellus iaculis neque</li>
+						<li>Purus sodales ultricies</li>
+						<li>Vestibulum laoreet porttitor sem</li>
+						<li>Ac tristique libero volutpat at</li>
+					</ul>
+					</li>
+					<li>Faucibus porta lacus fringilla vel</li>
+					<li>Aenean sit amet erat nunc</li>
+					<li>Eget porttitor lorem</li>
+				</ul>
+			</div>
+			<!-- Unstyled Lists -->
+			<div class="col-lg-3">
+				<h4>Unstyled Lists</h4>
+				<ul class="unstyled">
+					<li>Lorem ipsum dolor sit amet</li>
+					<li>Consectetur adipiscing elit</li>
+					<li>Integer molestie lorem at massa</li>
+					<li>Facilisis in pretium nisl aliquet</li>
+					<li>Nulla volutpat aliquam velit
+					<ul>
+						<li>Phasellus iaculis neque</li>
+						<li>Purus sodales ultricies</li>
+						<li>Vestibulum laoreet porttitor sem</li>
+						<li>Ac tristique libero volutpat at</li>
+					</ul>
+					</li>
+					<li>Faucibus porta lacus fringilla vel</li>
+					<li>Aenean sit amet erat nunc</li>
+					<li>Eget porttitor lorem</li>
+				</ul>
+			</div>
+			<!-- Ordered Lists -->
+			<div class="col-lg-3">
+				<h4>Ordered Lists</h4>
+				<ol>
+					<li>Lorem ipsum dolor sit amet</li>
+					<li>Consectetur adipiscing elit</li>
+					<li>Integer molestie lorem at massa</li>
+					<li>Facilisis in pretium nisl aliquet</li>
+					<li>Nulla volutpat aliquam velit
+					<ol>
+						<li>Phasellus iaculis neque</li>
+						<li>Purus sodales ultricies</li>
+						<li>Vestibulum laoreet porttitor sem</li>
+						<li>Ac tristique libero volutpat at</li>
+					</ol>
+					</li>
+					<li>Faucibus porta lacus fringilla vel</li>
+					<li>Aenean sit amet erat nunc</li>
+					<li>Eget porttitor lorem</li>
+				</ol>
+			</div>
+			<!-- Unstyled Lists -->
+			<div class="col-lg-3">
+				<h4>Unstyled Lists</h4>
+				<ol class="unstyled">
+					<li>Lorem ipsum dolor sit amet</li>
+					<li>Consectetur adipiscing elit</li>
+					<li>Integer molestie lorem at massa</li>
+					<li>Facilisis in pretium nisl aliquet</li>
+					<li>Nulla volutpat aliquam velit
+					<ol>
+						<li>Phasellus iaculis neque</li>
+						<li>Purus sodales ultricies</li>
+						<li>Vestibulum laoreet porttitor sem</li>
+						<li>Ac tristique libero volutpat at</li>
+					</ol>
+					</li>
+					<li>Faucibus porta lacus fringilla vel</li>
+					<li>Aenean sit amet erat nunc</li>
+					<li>Eget porttitor lorem</li>
+				</ol>
+			</div>
+		</div>
+		<!-- divider -->
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="solidline">
 				</div>
-				<div class="col-md-3 col-sm-3 col-xs-6 stats-grid">
-					<div class="stats-img w3-agileits">
-						<i class="fa fa-trophy" aria-hidden="true"></i>
-					</div>
-					<div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='269' data-delay='8' data-increment="1">269</div>
-					<p>Awards</p>
+			</div>
+		</div>
+		<!-- end divider -->
+		<div class="row">
+			<div class="col-lg-4">
+				<h4>Blockquote</h4>
+				<blockquote>
+					<i class="icon-quote-left icon-2x"></i> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam non mod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+				</blockquote>
+			</div>
+			<div class="col-lg-4">
+				<h4>Blockquote and cite</h4>
+				<blockquote>
+					<i class="icon-quote-left icon-2x"></i> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam non mod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. <cite>John doe, Awesome Inc.</cite>
+				</blockquote>
+			</div>
+			<div class="col-lg-4">
+				<h4>Pullquote left and right</h4>
+				<span class="pullquote-left">
+				Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam non mod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </span>
+				<span class="pullquote-right margintop10">
+				Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam non mod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </span>
+			</div>
+		</div>
+		<!-- divider -->
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="solidline">
 				</div>
-				<div class="clearfix"></div>
+			</div>
+		</div>
+		<!-- end divider -->
+		<div class="row">
+			<div class="col-lg-12">
+				<h4>Preformatted text</h4>
+				<pre class="prettyprint linenums">
+					 &lt;div class="col-lg-12"&gt;<br />
+					 &nbsp;&nbsp;&lt;p&gt;Lorem ipsum dolor sit amet, consetetur sadipscing elitr..&lt;/p&gt;<br />
+					 &nbsp;&nbsp;&lt;p&gt;Lorem ipsum dolor sit amet, consetetur sadipscing elitr..&lt;/p&gt;<br />
+					 &nbsp;&nbsp;&lt;p&gt;Lorem ipsum dolor sit amet, consetetur sadipscing elitr..&lt;/p&gt;<br />
+					 &lt;/div&gt;
+				</pre>
 			</div>
 		</div>
 	</div>
-	<!-- //Stats -->
-	<!-- about-team -->
-	<div class="team">
-		<div class="container">
-			<div class="agileits-title">
-				<h3>Our Team</h3>
-				<p>Mauris rutrum turpis eget tincidunt eleifend vestibulum condimentum mollis tellus eu magna laoreet.</p>
-			</div>
-			<div class="team-agileinfo">
-				<div class="col-md-3 col-sm-6 col-xs-6 team-grids">
-					<div class="thumbnail team-agileits">
-						<img src="images/t1.jpg" class="img-responsive" alt="...">
-						<div class="w3agile-caption">
-							<h4>Vaura Tegsner</h4>
-							<p>Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary</p>
-							<div class="social-icon">
-								<a href="#" class="social-button twitter"><i class="fa fa-twitter"></i></a>
-								<a href="#" class="social-button facebook"><i class="fa fa-facebook"></i></a>
-								<a href="#" class="social-button google"><i class="fa fa-google-plus"></i></a>
-								<a href="#" class="social-button dribbble"><i class="fa fa-dribbble"></i></a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-6 team-grids">
-					<div class="thumbnail team-agileits">
-						<img src="images/t2.jpg" class="img-responsive" alt="...">
-						<div class="w3agile-caption">
-							<h4>Jark Kohnson</h4>
-							<p>Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary</p>
-							<div class="social-icon">
-								<a href="#" class="social-button twitter"><i class="fa fa-twitter"></i></a>
-								<a href="#" class="social-button facebook"><i class="fa fa-facebook"></i></a>
-								<a href="#" class="social-button google"><i class="fa fa-google-plus"></i></a>
-								<a href="#" class="social-button dribbble"><i class="fa fa-dribbble"></i></a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-6 team-grids">
-					<div class="thumbnail team-agileits">
-						<img src="images/t3.jpg" class="img-responsive" alt="...">
-						<div class="w3agile-caption">
-							<h4>Goes Mehak</h4>
-							<p>Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary</p>
-							<div class="social-icon">
-								<a href="#" class="social-button twitter"><i class="fa fa-twitter"></i></a>
-								<a href="#" class="social-button facebook"><i class="fa fa-facebook"></i></a>
-								<a href="#" class="social-button google"><i class="fa fa-google-plus"></i></a>
-								<a href="#" class="social-button dribbble"><i class="fa fa-dribbble"></i></a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-6 team-grids">
-					<div class="thumbnail team-agileits">
-						<img src="images/t4.jpg" class="img-responsive" alt="...">
-						<div class="w3agile-caption">
-							<h4>Chunk Erson</h4>
-							<p>Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary</p>
-							<div class="social-icon">
-								<a href="#" class="social-button twitter"><i class="fa fa-twitter"></i></a>
-								<a href="#" class="social-button facebook"><i class="fa fa-facebook"></i></a>
-								<a href="#" class="social-button google"><i class="fa fa-google-plus"></i></a>
-								<a href="#" class="social-button dribbble"><i class="fa fa-dribbble"></i></a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
-		</div>
-	</div>
-	<!-- //about-team -->
+	</section>
 
   @endsection

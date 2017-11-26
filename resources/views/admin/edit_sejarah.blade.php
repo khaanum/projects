@@ -23,8 +23,8 @@
         <div class="col-md-12">
           <div class="box box-success">
             <div class="box-header">
-              <h3 class="box-title">CK Editor
-                <small>Advanced and full of features</small>
+              <h3 class="box-title"><i class="fa fa-pencil"></i>
+                <small>Edit deskripsi sejarah</small>
               </h3>
               
             </div>

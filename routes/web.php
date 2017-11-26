@@ -97,83 +97,22 @@ Route::get('/admin/logout', function()
 Route::get('/d', function () {
     return view('website.home');
 });
-
-Route::get('/tatausaha', function (){
-    return view('website.tatausaha');
-});
-
-Route::get('/peraturan', function (){
-    return view('website.peraturan');
-});
-
-Route::get('/WebArtikel', function(){
-	return view('website.artikel');
-});
-
-Route::get('/WebEnumerasi', function(){
-	return view('website.enumerasi');
-});
-
-Route::get('/WebKph', function(){
-	return view('website.kph');
-});
-
-Route::get('/WebOrganisasi', function(){
-	return view('website.organisasi');
-});
-
-Route::get('/WebPcg', function(){
-	return view('website.pcg');
-});
-
-Route::get('/WebPelepasan', function(){
-	return view('website.pelepasan');
-});
-
-Route::get('/WebPemanfaatan', function(){
-	return view('website.pemanfaatan');
-});
-
-Route::get('/WebPenggunaan', function(){
-	return view('website.penggunaan');
-});
-
-Route::get('/WebTatabatas', function(){
-	return view('website.tatabatas');
-});
-
-Route::get('/WebPpkh', function(){
-	return view('website.ppkh');
-});
-
-Route::get('/WebSejarah', function(){
-	return view('website.sejarah');
-});
-
-Route::get('/WebTuspoksi', function(){
-	return view('website.tuspoksi');
-});
-
-Route::get('/WebVerifikasi', function(){
-	return view('website.verifikasi');
-});
-
-Route::get('/WebVisimisi', function(){
-	return view('website.visimisi');
-});
-
-Route::get('/WebWilayah', function(){
-	return view('website.wilayah');
-});
+Route::get('/Webkontak', 'WebkontakController@index');
+Route::get('/web/isdh', 'WebisdhController@index');
+Route::get('/web/pkh', 'WebpkhController@index');
+Route::get('/web/sejarah', 'WebsejarahController@index');
+Route::get('/web/visimisi', 'WebvisimisiController@index');
+Route::get('/web/tuspoksi', 'WebtuspoksiController@index');
+Route::get('/web/organisasi', 'WeborganisasiController@index');
+Route::get('/web/tu', 'WebtuController@index');
+Route::get('/web/artikel', 'WebartikelController@index');
+Route::get('/web/peraturan', 'WebperaturanController@index');
 
 // buat belajar
 Route::get('/pegawai', 'PegawaiController@index');
 Route::get('/artikels', 'artikelController@index');
 
-//Kontak
-Route::get('/contact', 'contactcontroller@index');
-Route::get('/isdh', 'WebisdhController@index');
-Route::get('/pkh', 'WebpkhController@index');
+
 
 //Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
