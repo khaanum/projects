@@ -53,7 +53,7 @@
 			                	<input type="hidden" name="delete" value="delete">{{csrf_field()}}
 			                 	</form>
 			                    </div>
-                  			</td>
+                  				</td>
 							</tr>
 							@endforeach
 		                </tbody>

@@ -46,6 +46,14 @@
             <i class="fa  fa-users"></i> <span>Tata Usaha</span>
           </a>
         </li>
+
+        <!-- coba export file excel tab -->
+        <li>
+          <a href="/admin/excel">
+            <i class="fa  fa-facebook-f"></i> <span>Excel Test</span>
+          </a>
+        </li>
+        
         <li>
           <a href="/admin/kontak">
             <i class="fa fa-map-o"></i> <span>Kontak</span>

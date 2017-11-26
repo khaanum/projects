@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Excel;
 
 class ExcelController extends Controller
 {
@@ -13,7 +14,8 @@ class ExcelController extends Controller
      */
     public function index()
     {
-        //
+        $excel = Excel::all();
+        return view('admin.excel.excel', compact('excel'));
     }
 
     /**
@@ -23,7 +25,7 @@ class ExcelController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.excel.excel-create');
     }
 
     /**
@@ -34,7 +36,16 @@ class ExcelController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
+        $fileUpload = $request->file('file');
+        $path = $fileUpload->store('/public/files');
+
+        $file = Excel::create([
+            'daerah' => $request->daerah ?? $fileUpload->getClientOriginalName(),
+            'file' => $path
+        ]);
+
+        return redirect('/admin/excel');
     }
 
     /**

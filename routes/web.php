@@ -73,6 +73,11 @@ Route::group(['middleware' => 'auth'], function(){
 	Route::get('/admin/visimisi', 'VisimisiController@index')->name('a-visimisi');
 	Route::get('/admin/visimisi/{id}/edit','VisimisiController@edit')->name('edit_visimisi');
 	Route::patch('/admin/visimisi', 'VisimisiController@update')->name('admin.a-visimisi');
+
+	// buat test upload file excel
+	Route::get('/admin/excel', 'ExcelController@index')->name('admin.excel-index');
+	Route::get('/admin/excel/create', 'ExcelController@create')->name('admin.excel-create');
+	Route::post('/admin/excel', 'ExcelController@store')->name('admin.excel-post');
 	
 });
 

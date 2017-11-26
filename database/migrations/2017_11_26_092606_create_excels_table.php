@@ -15,6 +15,8 @@ class CreateExcelsTable extends Migration
     {
         Schema::create('excels', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('daerah');
+            $table->string('file');
             $table->timestamps();
         });
     }
