@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Excel;
+use Illuminate\Support\Facades\Storage;
 
 class ExcelController extends Controller
 {
@@ -38,7 +39,8 @@ class ExcelController extends Controller
     {
 
         $fileUpload = $request->file('file');
-        $path = $fileUpload->store('/public/files');
+        // $path = $fileUpload->store('files');
+        $path = Storage::disk('uploads')->put('files', $fileUpload);
 
         $file = Excel::create([
             'daerah' => $request->daerah ?? $fileUpload->getClientOriginalName(),
@@ -56,7 +58,8 @@ class ExcelController extends Controller
      */
     public function show($id)
     {
-        //
+        $excel = Excel::findOrFail($id);
+        return view('admin.excel.excel-single', compact('excel'));
     }
 
     /**

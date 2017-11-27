@@ -78,6 +78,7 @@ Route::group(['middleware' => 'auth'], function(){
 	Route::get('/admin/excel', 'ExcelController@index')->name('admin.excel-index');
 	Route::get('/admin/excel/create', 'ExcelController@create')->name('admin.excel-create');
 	Route::post('/admin/excel', 'ExcelController@store')->name('admin.excel-post');
+	Route::get('/admin/excel/{id}', 'ExcelController@show')->name('admin.excel-show');
 	
 });
 

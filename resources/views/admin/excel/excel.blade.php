@@ -36,7 +36,7 @@
 									<td>{{$data->daerah}}</td>
 									<td>{{$data->file}}</td>
 									<td>
-										
+										<a class="btn btn-primary" href="/admin/excel/{{$data->id}}">Detail</a>
 									</td>
 								</tr>
 								@endforeach
