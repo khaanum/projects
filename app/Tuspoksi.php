@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Tuspoksi extends Model
 {
     protected $fillable = [
-    	'title', 'content', 'image'
+    	'content', 'image'
     ];
     protected $table = 'm-tuspoksis';
 }

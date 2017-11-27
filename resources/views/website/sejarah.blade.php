@@ -14,7 +14,8 @@
 			</div>
 		</div>
 	</div>
-	</section>
+</section>
+
 <section class="callaction">
 	<div class="container">
 		<div class="row">
@@ -27,9 +28,9 @@
 			</div>
 		</div>
 	</div>
-	</section>
+</section>
 
-	<section id="content">
+<section id="content">
 	<div class="container">
 		<!-- divider -->
 		<div class="row">
@@ -70,7 +71,7 @@
 		<!-- end divider -->
 
 	</div>
-	</section>
+</section>
 
 
   @endsection

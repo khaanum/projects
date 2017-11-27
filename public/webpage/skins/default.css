@@ -54,7 +54,7 @@ header .nav li.active ul.dropdown-menu li.active a{
 
 
 .breadcrumb {
-  background-color: #68A4C4;
+  background-color: #099238;
 }
 
 /* === border color === */
@@ -216,9 +216,9 @@ ul.clients li:hover {
 
 /* footer */
 footer{
-	background:#68A4C4;
+	background:#0f6125;
 }
 #sub-footer{
-	background:#68A4C4;
+	background:#073e16;
 }
 
