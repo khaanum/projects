@@ -29,7 +29,7 @@
 			                <tr>
 			                  <th>No</th>	
 			                  <th>Judul</th>
-			                  <th>Artikel</th>
+			                  <th style="width: 300px">Artikel</th>
 			                  <th>Gambar</th>
 			                  <th>Waktu</th>
 			                  <th>Action</th>
@@ -38,9 +38,9 @@
 		                <tbody>
 		                	@foreach($artikel as $data)
 							<tr>
-								<td>{{$data->id}}</td>
+								<td class="text-center">{{$data->id}}</td>
 								<td>{{$data->title}}</td>
-								<td>{!!$data->content!!}</td> 
+								<td>{!! str_limit($data->content, 70)!!}</td> 
 								<td><img style="width:80px;height:80px;" src="../adminpage/img/{{$data->image}}" alt=""></td>
 								<td>{{$data->created_at}}</td>
 								<td>

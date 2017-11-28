@@ -52,7 +52,7 @@ Route::group(['middleware' => 'auth'], function(){
 	//Peraturan
 	Route::get('/admin/peraturan', 'PeraturanController@index')->name('a-peraturan');
 	Route::put('/admin/peraturan/{id}/', 'PeraturanController@update')->name('admin.a-peraturan.edit');
-	Route::get('/admin/peraturan/{id}/edit', 'PeraturanPperaturanController@edit')->name('edit_pegawai');
+	Route::get('/admin/peraturan/{id}/edit', 'PeraturanController@edit')->name('edit_pegawai');
 	Route::delete('/admin/peraturan/{id}/delete', 'PeraturanController@destroy')->name('admin.a-peraturan.delete');
 	Route::get('/admin/peraturan/create', 'PeraturanController@create')->name('admin.a-peraturan.create');
 	Route::post('/admin/peraturan', 'PeraturanController@store')->name('admin.a-peraturan.store');
@@ -98,6 +98,7 @@ Route::get('/d', function () {
     return view('website.home');
 });
 Route::get('/web/kontak', 'WebkontakController@index');
+
 Route::get('/web/isdh', 'WebisdhController@index');
 Route::get('/web/pkh', 'WebpkhController@index');
 Route::get('/web/sejarah', 'WebsejarahController@index');
@@ -106,6 +107,9 @@ Route::get('/web/tuspoksi', 'WebtuspoksiController@index');
 Route::get('/web/organisasi', 'WeborganisasiController@index');
 Route::get('/web/tu', 'WebtuController@index');
 Route::get('/web/artikel', 'WebartikelController@index');
+Route::post('/web/artikel', 'WebartikelController@store')->name('website.artikel.store');
+// Route::get('/web/artikel/{slug}', ['as' => 'website.artikel', 'uses' => 'WebartikelController@single']) -> where ('slug', '[w\d\-\_]+');
+
 Route::get('/web/peraturan', 'WebperaturanController@index');
 
 // buat belajar

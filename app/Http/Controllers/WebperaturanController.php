@@ -10,7 +10,7 @@ class WebperaturanController extends Controller
     //
     public function index()
     {
-    	 $peraturan = Peraturan::all();
+    	$peraturan = Peraturan::all();
     	return view ('website.peraturan', compact('peraturan'));
     }
 }

@@ -24,23 +24,19 @@
       <div class="row">
         <div class="col-md-12">
           <div class="box box-info">
-            <div class="box-header">
-              <h3 class="box-title">CK Editor
-                <small>Advanced and full of features</small>
-              </h3>
-            </div>
-            
             <!-- /.box-header -->
             <div class="box-body pad">
+              <label for="title">Judul</label>
               <input class="form-control input-lg" type="text" placeholder="Judul artikel" name="title">
               <br>
               <form>
+                <label for="editor1">Isi Artikel</label>
                     <textarea id="editor1" name="content" rows="10" cols="80">                     
                     </textarea>
               </form>
               <br>
               <div class="form-group">
-                  <label for="image">File input</label>
+                  <label for="image">Gambar</label>
                   <input type="file" id="image" name="image">
               </div>
             </div>

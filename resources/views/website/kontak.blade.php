@@ -13,9 +13,9 @@
 				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4376542.827441857!2d133.94238155277205!3d-25.73870281693212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2b2bfd076787c5df%3A0x538267a1955b1352!2sAustralia!5e0!3m2!1sen!2sin!4v1439377130002" allowfullscreen></iframe>
 			</div> 
 			<div class="contact-agileinfo"> 
-				<form method="POST" action="{{route('website.kontak'), $kontak}}"> 
+				<form method="POST" action="{{route(''), $kontak}}"> 
 				{{ csrf_field() }} 
-				{{ method_field('PATCH') }}
+				{{ method_field('POST') }}
 				<div class="col-md-7 contact-right">				
 					<form action="#" method="post"> 
 						<input type="text" name="name" placeholder="Name" required="">
@@ -40,7 +40,8 @@
 						</li>
 					</ul>
 				</div>						
-				<div class="clearfix"> </div>  
+				<div class="clearfix"> </div> 
+				</form> 
 			</div>			
 		</div>			
 	</div>

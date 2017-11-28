@@ -10,7 +10,7 @@ class KontakController extends Controller
     public function index()
     {
         $kontak = Kontak::all();
-        return view ('admin.a-kontak', compact('kontak'));
+        return view ('admin.dashboard', compact('kontak'));
     }
 
     public function create()
