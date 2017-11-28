@@ -19,7 +19,6 @@ class CreateMKontaksTable extends Migration
             $table->string('email');
             $table->string('phone_number');
             $table->string('message');
-            $table->string('content');
             $table->timestamps();
         });
     }

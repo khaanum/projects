@@ -1,74 +1,94 @@
-@extends('website.layout.app4')
+@extends('website.layout.app2')
 
+@section('page-title')
+		Tata Usaha
+@endsection
 
 @section('content')
 
-<section id="inner-headline">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12">
-				<ul class="breadcrumb">
-					<li><a href="#"><i class="fa fa-home"></i></a><i class="icon-angle-right"></i></li>
-					<li><a href="#">Tata Usaha</a><i class="icon-angle-right"></i></li>
-				</ul>
+<!-- welcome -->
+	<div class="welcome">
+		<div class="container">	
+			<div class="agileits-title">
+				<h3>Administration Section of BPKH III Pontianak</h3>
+				<p>Subbagian tata usaha Balai Pemantapan Kawasan Hutan Wilayah III Pontianak memiliki tugas:</p>
 			</div>
-		</div>
-	</div>
-</section>
-<section class="callaction">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12">
-				<div class="big-cta">
-					<div class="cta-text">
-						<h2>Tata Usaha BPKH Wilayah III Pontianak</h2>
+			<div class="welcome-agileinfo">
+				<div class="col-md-4 col-xs-6 welcome-grid agileits-w3layouts">  
+					<div class="col-xs-2 welcome-grid-left">
+						<span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
 					</div>
+					<div class="col-xs-10 welcome-grid-right">
+						<h4>Melakukan urusan tata persuratan</h4>
+						<p></p>
+					</div>
+					<div class="clearfix"> </div>
 				</div>
+				<div class="col-md-4 col-xs-6 welcome-grid agileits-w3layouts">
+					<div class="col-xs-2 welcome-grid-left">
+						<span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+					</div>
+					<div class="col-xs-10 welcome-grid-right">
+						<h4>Kepegawaian</h4>
+						<p></p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="col-md-4 col-xs-6 welcome-grid agileits-w3layouts">
+					<div class="col-xs-2 welcome-grid-left">
+						<span class="glyphicon glyphicon-credit-card" aria-hidden="true"></span>
+					</div>
+					<div class="col-xs-10 welcome-grid-right">
+						<h4>Keuangan</h4>
+						<p></p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="col-md-4 col-xs-6 welcome-grid welcome-grid-bottom">
+					<div class="col-xs-2 welcome-grid-left">
+						<span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span>
+					</div>
+					<div class="col-xs-10 welcome-grid-right">
+						<h4>Perlengkapan</h4>
+						<p></p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="col-md-4 col-xs-6 welcome-grid welcome-grid-bottom">
+					<div class="col-xs-2 welcome-grid-left">
+						<span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+					</div>
+					<div class="col-xs-10 welcome-grid-right">
+						<h4>Rumah Tangga</h4>
+						<p></p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="clearfix"> </div>
 			</div>
 		</div>
 	</div>
-</section>
-<section id="content">
-	<div class="container">
-
-			<div class="row">
-			<div class="col-lg-8">
-				<h4>Subbagian Tata Usaha </h4>
-				<blockquote>
-					<i class="icon-quote-left icon-2x"></i> Subbagian tata usaha Balai Pemantapan Kawasan Hutan Wilayah III Pontianak memiliki tugas:
-					<li>melakukan urusan tata persuratan</li>
-					<li>kepegawaian</li>
-					<li>keuangan</li>
-					<li>perlengkapan dan</li>
-					<li>rumah tangga</li>
-				</blockquote>
-			</div>
-			
-		</div>
-		<!-- divider -->
-		<div class="row">
+	<!-- //welcome -->
+	<div class="row">
 			<div class="col-lg-12">
 				<div class="solidline">
 				</div>
 			</div>
-		</div>
-		<!-- end divider -->
-
-		<div class="row">
-			<div class="col-lg-12">
-				<h4>Data Pegawai BPKH Wilayah III Tahun 2017</h4>
-				<div class="panel panel-default">
- 					 <!-- Default panel contents -->
-
-  					<!-- Table -->
-  					<table class="table">
+	</div>
+	<!-- Stats -->
+	<!-- about-slid -->
+	<div class="w3about-slid agileits-w3layouts"> 
+		<div class="container">
+			<div class="about-slid-info"> 
+				<h4>Data Pegawai Balai Pemantapan Kawasan Hutan Wilayah III Pontianak</h4>
+				<table class="table table-striped">
 						<thead>
 							<tr>
-								<th>No</th>
-								<th>Nama</th>
-								<th>Nip</th>
-								<th>Golongan</th>
-								<th>Jabatan</th>
+								<th>NO</th>
+								<th>NAMA</th>
+								<th>NIP</th>
+								<th>GOLONGAN</th>
+								<th>JABATAN</th>
 							</tr>
 						</thead>  
 						<tbody>
@@ -83,18 +103,9 @@
 							@endforeach
 		                </tbody> 
   					</table>
-				</div>
 			</div>
 		</div>
-		<!-- divider -->
-		<div class="row">
-			<div class="col-lg-12">
-				<div class="solidline">
-				</div>
-			</div>
-		</div>
-		<!-- end divider -->
 	</div>
-	</section>
+	<!-- //about-slid -->
 
 @endsection

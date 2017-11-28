@@ -1,185 +1,85 @@
-@extends('website.layout.app4')
+@extends('website.layout.app2')
+
+@section('page-title')
+	Artikel
+@endsection
 
 @section('content')
 
-	<section id="inner-headline">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12">
-				<ul class="breadcrumb">
-					<li><a href="#"><i class="fa fa-home"></i></a><i class="icon-angle-right"></i></li>
-					<li class="active">Blog</li>
+	<!-- single -->
+	<div class="single">
+		<div class="container">
+			<div class="wthree_single_grid">
+				<h4>Itaque earum rerum hic tenetur</h4>
+				<ul>
+					<li><span class="fa fa-user" aria-hidden="true"></span><a href="#">Michael Smith</a></li>
+					<li><span class="fa fa-tags" aria-hidden="true"></span><a href="#">5 Tags</a></li>
+					<li><span class="fa fa-envelope-o" aria-hidden="true"></span><a href="#">5 Comments</a></li>
+					<li><span class="fa fa-pencil-square-o" aria-hidden="true"></span>Recusandae</li>
 				</ul>
 			</div>
-		</div>
-	</div>
-	</section>
-	<section id="content">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-8">
-				<article>
-						<div class="post-image">
-							<div class="post-heading">
-								<h3><a href="#">This is an example of standard post format</a></h3>
-							</div>
-							<img src="img/dummies/blog/img1.jpg" alt="" />
+			<div class="agile_single_banner">
+				<img src="{{asset('webpage/images/s1.jpg')}}" alt="" class="img-responsive" />
+			</div>
+			<div class="wthree_single_grid1">
+				<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis 
+					praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias
+					excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui
+					officia deserunt mollitia animi, id est laborum et dolorum fuga. 
+					<span>Et harum quidem rerum facilis est et expedita distinctio. Nam libero 
+					tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus 
+					id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis 
+					dolor repellendus.</span> Temporibus autem quibusdam et aut officiis debitis 
+					aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et 
+					molestiae non recusandae. <span>Itaque earum rerum hic tenetur a sapiente delectus, 
+					ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis 
+					doloribus asperiores repellat.
+					Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur</span></p>
+			</div> 
+			<div class="popular-posts">
+				<h4 class="w3ls-title">Popular Posts</h4>
+				<div class="popular-posts-grids">
+					<div class="col-md-3 col-sm-3 col-xs-6 popular-posts-grid">	
+						<div class="popular-posts-grid1">
+							<a href="single.html"><img src="{{asset('webpage/images/g3.jpg')}}" alt=" " class="img-responsive"></a>
+							<h4><a href="single.html">dolori perior</a></h4>
+							<p>Itaque earum rerum hic tenetur a sapiente delectus.</p>
 						</div>
-						<p>
-							 Qui ut ceteros comprehensam. Cu eos sale sanctus eligendi, id ius elitr saperet, ocurreret pertinacia pri an. No mei nibh consectetuer, semper laoreet perfecto ad qui, est rebum nulla argumentum ei. Fierent adipisci iracundia est ei, usu timeam persius ea. Usu ea justo malis, pri quando everti electram ei, ex homero omittam salutatus sed.
-						</p>
-						<div class="bottom-article">
-							<ul class="meta-post">
-								<li><i class="icon-calendar"></i><a href="#"> Mar 23, 2013</a></li>
-								<li><i class="icon-user"></i><a href="#"> Admin</a></li>
-								<li><i class="icon-folder-open"></i><a href="#"> Blog</a></li>
-								<li><i class="icon-comments"></i><a href="#">4 Comments</a></li>
-							</ul>
-							<a href="#" class="pull-right">Continue reading <i class="icon-angle-right"></i></a>
+					</div>
+					<div class="col-md-3 col-sm-3 col-xs-6 popular-posts-grid">	
+						<div class="popular-posts-grid1">
+							<a href="single.html"><img src="{{asset('webpage/images/g4.jpg')}}" alt=" " class="img-responsive"></a>
+							<h4><a href="single.html">rerum tenetur</a></h4>
+							<p>Itaque earum rerum hic tenetur a sapiente delectus.</p>
 						</div>
-				</article>
-				<article>
-						<div class="post-slider">
-							<div class="post-heading">
-								<h3><a href="#">This is an example of slider post format</a></h3>
-							</div>
-							<!-- start flexslider -->
-							<div id="post-slider" class="flexslider">
-								<ul class="slides">
-									<li>
-									<img src="img/dummies/blog/img1.jpg" alt="" />
-									</li>
-									<li>
-									<img src="img/dummies/blog/img2.jpg" alt="" />
-									</li>
-									<li>
-									<img src="img/dummies/blog/img3.jpg" alt="" />
-									</li>
-								</ul>
-							</div>
-							<!-- end flexslider -->
+					</div>
+					<div class="col-md-3 col-sm-3 col-xs-6 popular-posts-grid">	
+						<div class="popular-posts-grid1">
+							<a href="single.html"><img src="{{asset('webpage/images/g5.jpg')}}" alt=" " class="img-responsive"></a>
+							<h4><a href="single.html">saepe eveniet </a></h4>
+							<p>Itaque earum rerum hic tenetur a sapiente delectus.</p>
 						</div>
-						<p>
-							 Qui ut ceteros comprehensam. Cu eos sale sanctus eligendi, id ius elitr saperet, ocurreret pertinacia pri an. No mei nibh consectetuer, semper laoreet perfecto ad qui, est rebum nulla argumentum ei. Fierent adipisci iracundia est ei, usu timeam persius ea. Usu ea justo malis, pri quando everti electram ei, ex homero omittam salutatus sed.
-						</p>
-						<div class="bottom-article">
-							<ul class="meta-post">
-								<li><i class="icon-calendar"></i><a href="#"> Mar 23, 2013</a></li>
-								<li><i class="icon-user"></i><a href="#"> Admin</a></li>
-								<li><i class="icon-folder-open"></i><a href="#"> Blog</a></li>
-								<li><i class="icon-comments"></i><a href="#">4 Comments</a></li>
-							</ul>
-							<a href="#" class="pull-right">Continue reading <i class="icon-angle-right"></i></a>
+					</div>
+					<div class="col-md-3 col-sm-3 col-xs-6 popular-posts-grid">	
+						<div class="popular-posts-grid1">
+							<a href="single.html"><img src="{{asset('webpage/images/g6.jpg')}}" alt=" " class="img-responsive"></a>
+							<h4><a href="single.html">ipsum tenetur</a></h4>
+							<p>Itaque earum rerum hic tenetur a sapiente delectus.</p>
 						</div>
-				</article>
-				<article>
-						<div class="post-quote">
-							<div class="post-heading">
-								<h3><a href="#">Nice example of quote post format below</a></h3>
-							</div>
-							<blockquote>
-								<i class="icon-quote-left"></i> Lorem ipsum dolor sit amet, ei quod constituto qui. Summo labores expetendis ad quo, lorem luptatum et vis. No qui vidisse signiferumque...
-							</blockquote>
-						</div>
-						<div class="bottom-article">
-							<ul class="meta-post">
-								<li><i class="icon-calendar"></i><a href="#"> Mar 23, 2013</a></li>
-								<li><i class="icon-user"></i><a href="#"> Admin</a></li>
-								<li><i class="icon-folder-open"></i><a href="#"> Blog</a></li>
-								<li><i class="icon-comments"></i><a href="#">4 Comments</a></li>
-							</ul>
-							<a href="#" class="pull-right">Continue reading <i class="icon-angle-right"></i></a>
-						</div>
-				</article>
-				<article>
-						<div class="post-video">
-							<div class="post-heading">
-								<h3><a href="#">Amazing video post format here</a></h3>
-							</div>
-							<div class="video-container">
-								<iframe src="http://player.vimeo.com/video/30585464?title=0&amp;byline=0">
-								</iframe>
-							</div>
-						</div>
-						<p>
-							 Qui ut ceteros comprehensam. Cu eos sale sanctus eligendi, id ius elitr saperet, ocurreret pertinacia pri an. No mei nibh consectetuer, semper laoreet perfecto ad qui, est rebum nulla argumentum ei. Fierent adipisci iracundia est ei, usu timeam persius ea. Usu ea justo malis, pri quando everti electram ei.
-						</p>
-						<div class="bottom-article">
-							<ul class="meta-post">
-								<li><i class="icon-calendar"></i><a href="#"> Mar 23, 2013</a></li>
-								<li><i class="icon-user"></i><a href="#"> Admin</a></li>
-								<li><i class="icon-folder-open"></i><a href="#"> Blog</a></li>
-								<li><i class="icon-comments"></i><a href="#">4 Comments</a></li>
-							</ul>
-							<a href="#" class="pull-right">Continue reading <i class="icon-angle-right"></i></a>
-						</div>
-				</article>
-				<div id="pagination">
-					<span class="all">Page 1 of 3</span>
-					<span class="current">1</span>
-					<a href="#" class="inactive">2</a>
-					<a href="#" class="inactive">3</a>
+					</div>
+					<div class="clearfix"> </div>
 				</div>
 			</div>
-			<div class="col-lg-4">
-				<aside class="right-sidebar">
-				<div class="widget">
-					<form class="form-search">
-						<input class="form-control" type="text" placeholder="Search..">
-					</form>
-				</div>
-				<div class="widget">
-					<h5 class="widgetheading">Categories</h5>
-					<ul class="cat">
-						<li><i class="icon-angle-right"></i><a href="#">Web design</a><span> (20)</span></li>
-						<li><i class="icon-angle-right"></i><a href="#">Online business</a><span> (11)</span></li>
-						<li><i class="icon-angle-right"></i><a href="#">Marketing strategy</a><span> (9)</span></li>
-						<li><i class="icon-angle-right"></i><a href="#">Technology</a><span> (12)</span></li>
-						<li><i class="icon-angle-right"></i><a href="#">About finance</a><span> (18)</span></li>
-					</ul>
-				</div>
-				<div class="widget">
-					<h5 class="widgetheading">Latest posts</h5>
-					<ul class="recent">
-						<li>
-						<img src="img/dummies/blog/65x65/thumb1.jpg" class="pull-left" alt="" />
-						<h6><a href="#">Lorem ipsum dolor sit</a></h6>
-						<p>
-							 Mazim alienum appellantur eu cu ullum officiis pro pri
-						</p>
-						</li>
-						<li>
-						<a href="#"><img src="img/dummies/blog/65x65/thumb2.jpg" class="pull-left" alt="" /></a>
-						<h6><a href="#">Maiorum ponderum eum</a></h6>
-						<p>
-							 Mazim alienum appellantur eu cu ullum officiis pro pri
-						</p>
-						</li>
-						<li>
-						<a href="#"><img src="img/dummies/blog/65x65/thumb3.jpg" class="pull-left" alt="" /></a>
-						<h6><a href="#">Et mei iusto dolorum</a></h6>
-						<p>
-							 Mazim alienum appellantur eu cu ullum officiis pro pri
-						</p>
-						</li>
-					</ul>
-				</div>
-				<div class="widget">
-					<h5 class="widgetheading">Popular tags</h5>
-					<ul class="tags">
-						<li><a href="#">Web design</a></li>
-						<li><a href="#">Trends</a></li>
-						<li><a href="#">Technology</a></li>
-						<li><a href="#">Internet</a></li>
-						<li><a href="#">Tutorial</a></li>
-						<li><a href="#">Development</a></li>
-					</ul>
-				</div>
-				</aside>
+			<div class="write-reply">
+				<h4 class="w3ls-title">Write a Comment</h4>
+				<form action="#" method="post"> 
+					<input type="text" name="Name" placeholder="Name"  required="">
+					<input type="text" name="Email" placeholder="Email" required=""> 
+					<textarea name="Comment" placeholder="Write a comment here..." required=""></textarea>
+					<input type="submit" value="Send">
+				</form>
 			</div>
 		</div>
 	</div>
-	</section>
-
-
+	<!-- //single -->   
 @endsection

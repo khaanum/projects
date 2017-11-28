@@ -97,7 +97,7 @@ Route::get('/admin/logout', function()
 Route::get('/d', function () {
     return view('website.home');
 });
-Route::get('/Webkontak', 'WebkontakController@index');
+Route::get('/web/kontak', 'WebkontakController@index');
 Route::get('/web/isdh', 'WebisdhController@index');
 Route::get('/web/pkh', 'WebpkhController@index');
 Route::get('/web/sejarah', 'WebsejarahController@index');
