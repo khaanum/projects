@@ -181,5 +181,8 @@ Route::get('/contact', 'contactcontroller@index');
 Route::get('/isdh', 'WebisdhController@index');
 Route::get('/pkh', 'WebpkhController@index');
 
+//penutupan lahan
+Route::get('/penutupan-lahan', 'LahanController@index');
+
 //Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');

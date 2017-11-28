@@ -53,6 +53,13 @@
             <i class="fa  fa-facebook-f"></i> <span>Excel Test</span>
           </a>
         </li>
+
+        <!-- coba export keadaan luas penutupan lahan -->
+        <li>
+          <a href="/penutupan-lahan">
+            <i class="fa  fa-hashtag"></i> <span>Luas Penutupan Lahan</span>
+          </a>
+        </li>
         
         <li>
           <a href="/admin/kontak">
