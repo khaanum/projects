@@ -10,7 +10,8 @@ class WebartikelController extends Controller
     //
     public function index()
     {
-    	$artikel = Artikel::all();
+    	// $artikel = Artikel::latest()->paginate(1);
+        $artikel = Artikel::orderBy('id', 'content')->paginate(1);
     	return view ('website.artikel', compact('artikel'));
     }
 
@@ -31,7 +32,5 @@ class WebartikelController extends Controller
     public function store(Request $request)
     {
        
-        Artikel::create($request->all());
-        return view('/DA');
     }
 }

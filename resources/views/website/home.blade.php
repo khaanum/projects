@@ -87,36 +87,17 @@
 	<div class="single">
 		<div class="container">
 	<div class="popular-posts">
-				<h4 class="w3ls-title">Popular Posts</h4>
+				<h4 class="w3ls-title">Berita Terkini</h4>
 				<div class="popular-posts-grids">
+					@foreach($artikel as $data)
 					<div class="col-md-3 col-sm-3 col-xs-6 popular-posts-grid">	
 						<div class="popular-posts-grid1">
-							<a href="single.html"><img src="{{asset('webpage/images/g3.jpg')}}" alt=" " class="img-responsive"></a>
-							<h4><a href="/web/artikel">dolori perior</a></h4>
-							<p>Itaque earum rerum hic tenetur a sapiente delectus.</p>
+							<a href="single.html"><img src="../adminpage/img/{{$data->image}}" alt=" " class="img-responsive"></a>
+							<h4><a href="/web/artikel">{{$data->title}}</a></h4>
+							<p>{!! str_limit($data->content,100) !!}</p>
 						</div>
 					</div>
-					<div class="col-md-3 col-sm-3 col-xs-6 popular-posts-grid">	
-						<div class="popular-posts-grid1">
-							<a href="single.html"><img src="{{asset('webpage/images/g4.jpg')}}" alt=" " class="img-responsive"></a>
-							<h4><a href="/web/artikel">rerum tenetur</a></h4>
-							<p>Itaque earum rerum hic tenetur a sapiente delectus.</p>
-						</div>
-					</div>
-					<div class="col-md-3 col-sm-3 col-xs-6 popular-posts-grid">	
-						<div class="popular-posts-grid1">
-							<a href="single.html"><img src="{{asset('webpage/images/g5.jpg')}}" alt=" " class="img-responsive"></a>
-							<h4><a href="/web/artikel">saepe eveniet </a></h4>
-							<p>Itaque earum rerum hic tenetur a sapiente delectus.</p>
-						</div>
-					</div>
-					<div class="col-md-3 col-sm-3 col-xs-6 popular-posts-grid">	
-						<div class="popular-posts-grid1">
-							<a href="single.html"><img src="{{asset('webpage/images/g6.jpg')}}" alt=" " class="img-responsive"></a>
-							<h4><a href="/web/artikel">ipsum tenetur</a></h4>
-							<p>Itaque earum rerum hic tenetur a sapiente delectus.</p>
-						</div>
-					</div>
+					@endforeach
 					<div class="clearfix"> </div>
 				</div>
 			</div>

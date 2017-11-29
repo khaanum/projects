@@ -94,9 +94,10 @@ Route::get('/admin/logout', function()
 
 
 //Routes Website
-Route::get('/d', function () {
-    return view('website.home');
-});
+// Route::get('/d', function () {
+//     return view('website.home');
+// });
+Route::get('/d', 'WebhomeController@index');
 Route::get('/web/kontak', 'WebkontakController@index');
 
 Route::get('/web/isdh', 'WebisdhController@index');

@@ -1,6 +1,6 @@
 @extends('website.layout.app2')
 @section('page-title')
-		
+	Visi & Misi		
 @endsection
 
 @section('content')

@@ -65,9 +65,9 @@
 			<div class="write-reply">
 				<h4 class="w3ls-title">Tulis Komentar</h4>
 				<form action="#" method="post"> 
-					<input type="text" name="Name" placeholder="Nama"  required="">
-					<input type="text" name="Email" placeholder="Email" required=""> 
-					<textarea name="Comment" placeholder="Tulis komentar di sini..." required=""></textarea>
+					{{ csrf_field() }}
+					<input type="text" name="name" placeholder="Nama"  required="">
+					<textarea name="comment" placeholder="Tulis komentar di sini..." required=""></textarea>
 					<input type="submit" value="Kirim">
 				</form>
 			</div>

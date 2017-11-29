@@ -84,11 +84,11 @@
 				<table class="table table-striped">
 						<thead>
 							<tr>
-								<th>NO</th>
-								<th>NAMA</th>
-								<th>NIP</th>
-								<th>GOLONGAN</th>
-								<th>JABATAN</th>
+								<th class="text-center">NO</th>
+								<th class="text-center">NAMA</th>
+								<th class="text-center">NIP</th>
+								<th class="text-center">GOLONGAN</th>
+								<th class="text-center">JABATAN</th>
 							</tr>
 						</thead>  
 						<tbody>
