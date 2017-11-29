@@ -80,6 +80,10 @@ Route::group(['middleware' => 'auth'], function(){
 	Route::post('/admin/excel', 'ExcelController@store')->name('admin.excel-post');
 	Route::get('/admin/excel/{id}', 'ExcelController@show')->name('admin.excel-show');
 	
+	//penutupan lahan
+	Route::get('/admin/penutupan-lahan', 'LahanController@index');
+	Route::post('/admin/penutupan-lahan/import', 'LahanController@import');
+	
 });
 
 
@@ -181,8 +185,7 @@ Route::get('/contact', 'contactcontroller@index');
 Route::get('/isdh', 'WebisdhController@index');
 Route::get('/pkh', 'WebpkhController@index');
 
-//penutupan lahan
-Route::get('/penutupan-lahan', 'LahanController@index');
+
 
 //Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');

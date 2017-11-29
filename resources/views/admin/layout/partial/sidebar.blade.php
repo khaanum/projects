@@ -56,7 +56,7 @@
 
         <!-- coba export keadaan luas penutupan lahan -->
         <li>
-          <a href="/penutupan-lahan">
+          <a href="/admin/penutupan-lahan">
             <i class="fa  fa-hashtag"></i> <span>Luas Penutupan Lahan</span>
           </a>
         </li>
