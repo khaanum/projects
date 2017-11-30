@@ -24,7 +24,7 @@
           <div class="box box-success">
             <div class="box-header">
               <h3 class="box-title"><i class="fa fa-pencil"></i>
-                <small>Edit deskripsi sejarah</small>
+                Ubah Data
               </h3>
               
             </div>

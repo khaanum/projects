@@ -17,10 +17,6 @@
     <div class="row">
         <div class="col-xs-12">
 			<div class="box box-success">
-	            <div class="box-header">
-	            	<i class="fa fa-table"></i>
-	              <h3 class="box-title">Artikel</h3>
-	            </div>
             	<!-- /.box-header -->
             	<div class="box-body">
             		<a type="button" class="btn bg-navy margin" href="/admin/artikel/create"><td>Tambah Artikel</a>
@@ -28,7 +24,7 @@
 		                <thead>
 			                <tr>
 			                  <th>No</th>	
-			                  <th>Judul</th>
+			                  <th style="width: 230px">Judul</th>
 			                  <th style="width: 300px">Artikel</th>
 			                  <th>Gambar</th>
 			                  <th>Waktu</th>

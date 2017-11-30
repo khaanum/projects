@@ -30,9 +30,9 @@
 			                	<tr>
 			                		<th style="border : 1px solid black;" rowspan="2">No</th>
 					                <th style="border : 1px solid black;" rowspan="2">Kawasan Hutan</th>
-					                <th colspan="4">Luas Berdasarkan</th>
-					                <th rowspan="2">Keterangan</th>
-					                <th rowspan="2">Action</th>
+					                <th style="border : 1px solid black;" colspan="4">Luas Berdasarkan</th>
+					                <th style="border : 1px solid black;" rowspan="2">Keterangan</th>
+					                <th style="border : 1px solid black;" rowspan="2">Action</th>
 			                	</tr>
 			                	<tr>
 			                		<th style="border : 1px solid black;">TGHK</th>

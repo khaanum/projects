@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Peraturan;
 
+
 class WebperaturanController extends Controller
 {
     //
@@ -13,4 +14,5 @@ class WebperaturanController extends Controller
     	$peraturan = Peraturan::all();
     	return view ('website.peraturan', compact('peraturan'));
     }
+
 }

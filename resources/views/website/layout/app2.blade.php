@@ -17,6 +17,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <link href="{{asset('webpage/css/bootstrap.css')}}" type="text/css" rel="stylesheet" media="all">
 <link href="{{asset('webpage/css/style.css')}}" type="text/css" rel="stylesheet" media="all">  
 <link href="{{asset('webpage/css/font-awesome.css')}}" rel="stylesheet">  <!-- font-awesome icons --> 
+<link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed|Noto+Sans" rel="stylesheet">
 <!-- //Custom Theme files --> 
 <!-- js -->
 <script src="{{asset('webpage/js/jquery-2.2.3.min.js')}}"></script>  
@@ -37,7 +39,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				@include('website.layout.partial.header')  
 				<!-- //header -->
 				<div class="banner-w3text">  
-				<h2>@yield('page-title')</h2>
+				<h2 style="font-family: 'Barlow Semi Condensed', sans-serif;">@yield('page-title')</h2>
 				</div>
 			</div>
 			<!-- //banner-info --> 

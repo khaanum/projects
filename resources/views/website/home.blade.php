@@ -9,66 +9,13 @@
 				<p>Website Balai Pemantapan Kawasan Hutan Wilayah III Pontianak</p>
 			</div>
 			<div class="welcome-agileinfo">
-				<div class="col-md-4 col-xs-6 welcome-grid agileits-w3layouts">  
-					<div class="col-xs-2 welcome-grid-left">
-						<span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span>
-					</div>
-					<div class="col-xs-10 welcome-grid-right">
-						<h4>tiamet pharetra nunc </h4>
-						<p>Itaque earum rerum hic tenetur a sapiente delectus maiores alias phasellus</p>
-					</div>
-					<div class="clearfix"> </div>
+				<div class="grid_3 grid_5 w3">
+				<h3 class="w3ls-hdg">Sekilas Tentang Balai Pemantapan Kawasan Hutan</h3>
+				<div class="well w3l">
+					<p>Balai Pemantapan Kawasan Hutan (BPKH) merupakan Unit Pelaksana Teknis (UPT) dibawah Direktorat Jenderal Planologi Berdasarkan Surat Keputusan Menteri Kehutanan Nomor 6188/kpts-II/2002 Tanggal 10 Juni 2002. Berdasarkan surat keuputasan tersebut, Balai Pemantapan Kawasan Hutan Wilayah III memiliki 10 tugas pokok pengurusan hutan di seluruh wilayah Kalimantan Barat.<p>
+					<p>Hutan merupakan salah satu modal dasar faktor yang dominan dalam pembangunan nasional yang secara potensial harus dimanfaatkan secara rasional dengan memperhatikan generasi masa kini dan masa datang. Dalam tugasnya, BPKH Wilayah III Pontianak telah berpengaruh dalam memberikan acuan penataan ruang kawasan hutan, terutama di wilayah kerja Kalimantan Barat.</p>
 				</div>
-				<div class="col-md-4 col-xs-6 welcome-grid agileits-w3layouts">
-					<div class="col-xs-2 welcome-grid-left">
-						<span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
-					</div>
-					<div class="col-xs-10 welcome-grid-right">
-						<h4>Etiam pharetra</h4>
-						<p>Sapiente delectus reiciendis maiores alias phasellus mattis tellus dictum </p>
-					</div>
-					<div class="clearfix"> </div>
-				</div>
-				<div class="col-md-4 col-xs-6 welcome-grid agileits-w3layouts">
-					<div class="col-xs-2 welcome-grid-left">
-						<span class="glyphicon glyphicon-check" aria-hidden="true"></span>
-					</div>
-					<div class="col-xs-10 welcome-grid-right">
-						<h4>pharetra erat</h4>
-						<p>phasellus mattis tellus eget tellus dictum justo scelerisque eget sapiente </p>
-					</div>
-					<div class="clearfix"> </div>
-				</div>
-				<div class="col-md-4 col-xs-6 welcome-grid welcome-grid-bottom">
-					<div class="col-xs-2 welcome-grid-left">
-						<span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
-					</div>
-					<div class="col-xs-10 welcome-grid-right">
-						<h4>erat et nunc </h4>
-						<p>Maiores alias phasellus mattis tellus eget tellus dictum justo interdum </p>
-					</div>
-					<div class="clearfix"> </div>
-				</div>
-				<div class="col-md-4 col-xs-6 welcome-grid welcome-grid-bottom">
-					<div class="col-xs-2 welcome-grid-left">
-						<span class="glyphicon glyphicon-hourglass" aria-hidden="true"></span>
-					</div>
-					<div class="col-xs-10 welcome-grid-right">
-						<h4>tiamet pharetra nunc </h4>
-						<p>Itaque earum rerum hic tenetur a sapiente delectus maiores alias phasellus</p>
-					</div>
-					<div class="clearfix"> </div>
-				</div>
-				<div class="col-md-4 col-xs-6 welcome-grid welcome-grid-bottom">
-					<div class="col-xs-2 welcome-grid-left">
-						<span class="glyphicon glyphicon-time" aria-hidden="true"></span>
-					</div>
-					<div class="col-xs-10 welcome-grid-right">
-						<h4>Etiam pharetra</h4>
-						<p>Sapiente delectus reiciendis maiores alias phasellus mattis tellus dictum </p>
-					</div>
-					<div class="clearfix"> </div>
-				</div> 
+			</div> 
 				<div class="clearfix"> </div>
 			</div>
 		</div>
@@ -78,8 +25,8 @@
 	<div class="w3about-slid agileits-w3layouts"> 
 		<div class="container">
 			<div class="about-slid-info"> 
-				<h4>Lorem ipsum dolor sit amet consectetur</h4>
-				<p>Fusce eu semper lacus, eget placerat mauris. Sed lectus tellus, sodales id elit a, feugiat porttitor nulla. Sed porta magna vitae nisl vulputate lacinia. Morbi malesuada sollicitudin tortor, vitae pharetra nunc lacinia eget.</p>
+				<h4>Sekilas Tentang Kalimantan Barat</h4>
+				<p>Kalimantan Barat adalah salah satu provinsi di Indonesia yang terletak di pulau Kalimantan merupakan provinsi terluas ke empat setelah Papua, Kalimantan Timur dan Kalimantan Tengah.</p>
 			</div>
 		</div>
 	</div>
@@ -87,23 +34,23 @@
 	<div class="single">
 		<div class="container">
 	<div class="popular-posts">
-				<h4 class="w3ls-title">Berita Terkini</h4>
-				<div class="popular-posts-grids">
-					@foreach($artikel as $data)
-					<div class="col-md-3 col-sm-3 col-xs-6 popular-posts-grid">	
-						<div class="popular-posts-grid1">
-							<a href="single.html"><img src="../adminpage/img/{{$data->image}}" alt=" " class="img-responsive"></a>
-							<h4><a href="/web/artikel">{{$data->title}}</a></h4>
-							<p>{!! str_limit($data->content,100) !!}</p>
-						</div>
-					</div>
-					@endforeach
-					<div class="clearfix"> </div>
+				<h4 class="w3ls-title">Artikel Terkini</h4>
+		<div class="popular-posts-grids">
+			@foreach($artikel as $data)
+			<div class="col-md-3 col-sm-3 col-xs-6 popular-posts-grid">	
+				<div class="popular-posts-grid1">
+					<a href="single.html"><img src="../adminpage/img/{{$data->image}}" alt=" " class="img-responsive"></a>
+					<h4><a href="/web/artikel/single">{{$data->title}}</a></h4>
+					<p>{!! str_limit($data->content,100) !!}</p>
 				</div>
 			</div>
+				@endforeach
+				<div class="clearfix"> </div>
+		</div>
+	</div>
 </div>
 </div>
-	<!-- news -->
+	<!-- LINK Terkait-->
 	<div class="news-w3layouts">
 		<div class="container">
 			<div class="agileits-title">
@@ -129,12 +76,5 @@
 			</div>
 		</div>
 	</div>
-	<!-- //news -->
-	<!-- subscribe -->
-	<!-- <div class="subscribe wthree-sub">  
-		<div class="container"> 
-			
-		</div>
-	</div> -->
-	<!-- //subscribe -->
+	<!-- //Link Terkait -->
 @endsection

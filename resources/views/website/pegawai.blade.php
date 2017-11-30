@@ -82,7 +82,7 @@
 			<div class="about-slid-info"> 
 				<h4>Data Pegawai Balai Pemantapan Kawasan Hutan Wilayah III Pontianak</h4>
 				<table class="table table-striped">
-						<thead>
+						<thead class="">
 							<tr>
 								<th class="text-center">NO</th>
 								<th class="text-center">NAMA</th>

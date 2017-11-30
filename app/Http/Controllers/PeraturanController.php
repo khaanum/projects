@@ -71,5 +71,7 @@ class PeraturanController extends Controller
     public function destroy($id)
     {
         //
+        $peraturan = Peraturan::find($id)->delete();
+        return redirect('/admin/peraturan');
     }
 }

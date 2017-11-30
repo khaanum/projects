@@ -78,7 +78,6 @@ class PkhController extends Controller
         return view('admin.edit_pkh', compact('pkh','id'));
     }
 
-    
     public function update(Request $request, $id)
     {
         $pkh = Pkh::find($id);

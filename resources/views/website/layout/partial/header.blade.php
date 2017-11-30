@@ -1,7 +1,7 @@
 <div class="w3header"> <!--header--> 
                     <nav class="navbar navbar-default">
                         <div class="navbar-header">
-                            <h1><a  href="/d"><span class="logo-mini"><img style="height: 42px;width:42px;" src="{{ asset ('adminpage/gambar/logo.png')}}" alt=""></span>BPKH</a></h1>
+                            <h1 ><a  href="/d"><span class="logo-mini"><img style="height: 42px;width:42px;" src="{{ asset ('../adminpage/gambar/logo.png')}}" alt=""></span>BPKH</a></h1>
                         </div>
                         <!-- navbar-header -->
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">

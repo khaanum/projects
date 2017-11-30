@@ -98,8 +98,8 @@ Route::get('/admin/logout', function()
 //     return view('website.home');
 // });
 Route::get('/d', 'WebhomeController@index');
+Route::get('/d/{id}', 'WebhomeController@show')->name('website.{id}.show');
 Route::get('/web/kontak', 'WebkontakController@index');
-
 Route::get('/web/isdh', 'WebisdhController@index');
 Route::get('/web/pkh', 'WebpkhController@index');
 Route::get('/web/sejarah', 'WebsejarahController@index');
@@ -107,17 +107,13 @@ Route::get('/web/visimisi', 'WebvisimisiController@index');
 Route::get('/web/tuspoksi', 'WebtuspoksiController@index');
 Route::get('/web/organisasi', 'WeborganisasiController@index');
 Route::get('/web/tu', 'WebtuController@index');
-Route::get('/web/artikel', 'WebartikelController@index');
-Route::post('/web/artikel', 'WebartikelController@store')->name('website.artikel.store');
-// Route::get('/web/artikel/{slug}', ['as' => 'website.artikel', 'uses' => 'WebartikelController@single']) -> where ('slug', '[w\d\-\_]+');
-
+// Route::get('/web/artikel', 'WebartikelController@index');
+Route::resource('/web/artikel', 'WebartikelController');
 Route::get('/web/peraturan', 'WebperaturanController@index');
+
+//Auth::routes();
+Route::get('/home', 'HomeController@index')->name('home');
 
 // buat belajar
 Route::get('/pegawai', 'PegawaiController@index');
 Route::get('/artikels', 'artikelController@index');
-
-
-
-//Auth::routes();
-Route::get('/home', 'HomeController@index')->name('home');

@@ -42,11 +42,11 @@
                 <td>
                 <div class="btn-group-center">
                 <form method="POST" action="/admin/peraturan/{{$data->id}}/delete">
-                        {{method_field('DELETE')}}
-                        <button type="submit" class="btn btn-danger" href="/admin/peraturan/{{$data->id}}/delete"><i class="fa fa-trash"></i>Delete</button>
-                        <input type="hidden" name="delete" value="delete">{{csrf_field()}}
-                        </form>
-                          </div>
+                  {{method_field('DELETE')}}
+                  <button type="submit" class="btn btn-danger" href="/admin/peraturan/{{$data->id}}/delete"><i class="fa fa-trash"></i> Hapus</button>
+                  <input type="hidden" name="delete" value="delete">{{csrf_field()}}
+                </form>
+                </div>
                         </td>
               </tr>
               @endforeach

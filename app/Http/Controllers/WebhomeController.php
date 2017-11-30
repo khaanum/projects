@@ -14,5 +14,11 @@ class WebhomeController extends Controller
     	return view('website.home', compact('artikel'));
     }
 
+    public function show($id)
+    {
+    	$artikel = Artikel::where('title', '=')->first();
+    	return view('website.artikel_single', compact('artikel'));
+    }
+
 
 }

@@ -23,8 +23,7 @@
         <div class="col-md-12">
           <div class="box box-success">
             <div class="box-header">
-              <h3 class="box-title">CK Editor
-                <small>Advanced and full of features</small>
+              <h3 class="box-title">Ubah Data
               </h3>
               
             </div>

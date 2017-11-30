@@ -4,7 +4,7 @@
 			<div class="footer-agileinfo">
 				<div class="col-md-4 col-sm-6 footer-wthree-grid">
 					<h6><a  href="index.html">BPKH</a></h6> 
-					<p>Aenean vitae metus sit amet purus sodales blandit. Nullam ut dolor eu urna viverra semper. Mauris est odio, laoreet laoreet sapien non bibendum nulla.</p>
+					<p>"Balai Pemantapan Kawasan Hutan (BPKH) merupakan Unit Pelaksana Teknis (UPT) dibawah Direktorat Jenderal Planologi berasarkan Surat Keputusan Menteri Kehutanan Nomor 6188/kpts-II/2002 Tanggal 10 Juni 2002."</p>
 				</div>
 				<div class="col-md-3 col-sm-6 footer-wthree-grid">
 					<h3>Informasi Lainnya</h3>

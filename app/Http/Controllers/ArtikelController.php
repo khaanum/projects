@@ -28,9 +28,15 @@ class ArtikelController extends Controller
                 'content' => 'required'
         ));
 
+        $slug = str_slug($request->title, '-');
+
+        if(Artikel::where('slug', $slug)->first() !=null)
+            $slug = $slug . '-' .time();
+
         //store in the database
         $artikel = new Artikel;
         $artikel->title = $request->title;
+        $artikel->slug = $slug;
         $artikel->content = $request->content;
         if ($request->hasFile('image')){
             $file = $request->file('image');
@@ -50,6 +56,8 @@ class ArtikelController extends Controller
     public function show($id)
     {
         //
+        
+
     }
 
     public function edit($id)
