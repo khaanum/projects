@@ -11,8 +11,8 @@ class Komentar extends Model
     ];
     protected $table = 'komentars';
 
-    public function artikels()
+    public function artikel()
     {
-    	return $this->belongsTo('App\Artikel');
+    	return $this->belongsTo(Artikel::class);
     }
 }

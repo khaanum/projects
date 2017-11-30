@@ -13,7 +13,8 @@ class Artikel extends Model
 
     public function komentars()
     {
-    	return $this->hasMany('App\Komentar', 'id_komentar');
+    	// return $this->hasMany('App\Komentar', 'id_komentar');
+    	return $this->hasMany(Komentar::class);
     }
 
 }

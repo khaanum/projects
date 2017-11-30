@@ -23,11 +23,12 @@
 			</div> 
 			
 			<div class="write-reply">
-				<h4 class="w3ls-title">Write a Comment</h4>
-				<form action="#" method="post"> 
-					<input type="text" name="Name" placeholder="Name"  required="">
-					<textarea name="Comment" placeholder="Write a comment here..." required=""></textarea>
-					<input type="submit" value="Send">
+				<h4 class="w3ls-title">Tulis komentar</h4>
+				<form action="{{ route('website.artikel_single.store')}}" method="post">
+				{{ csrf_field() }}  
+					<input type="text" name="name" placeholder="Name"  required="">
+					<textarea name="comment" placeholder="Tulis komentar anda di sini..." required=""></textarea>
+					<input type="submit" value="Komentar">
 				</form>
 			</div>
 
@@ -38,7 +39,7 @@
 						<h3>
 							<span>{{ $data->name }}</span>
 						</h3>
-						{{ $data->message }}
+						{{ $data->comment }}
 					</div>
 				</div>
 			</div>

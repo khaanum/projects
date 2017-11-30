@@ -28,8 +28,11 @@ class WebartikelController extends Controller
         return view('website.artikel_single', compact('artikel'));
     }
 
-    public function store(Request $request)
+    public function store(Request $request, Artikel $artikel)
     {
-       
+       // dd(request('message'));
+        Komentar::create([
+            'comment' => request('comment')
+        ]);
     }
 }
