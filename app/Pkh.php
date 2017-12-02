@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Pkh extends Model
 {
     protected $fillable = [
-    	'title'
+    	'title_pkh', 'file_pkh'
     ];
     protected $table = 'pkhs';
 }

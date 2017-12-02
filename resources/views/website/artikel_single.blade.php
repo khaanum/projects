@@ -21,29 +21,53 @@
 			<div class="wthree_single_grid1">
 				<p>{!! $artikel->content !!}</p>
 			</div> 
-			
+			<br>
+
 			<div class="write-reply">
 				<h4 class="w3ls-title">Tulis komentar</h4>
-				<form action="{{ route('website.artikel_single.store')}}" method="post">
+				<form action="{{ route('website.artikel_single.store', $artikel) }}" method="post">
 				{{ csrf_field() }}  
-					<input type="text" name="name" placeholder="Name"  required="">
+					<input type="text" name="name" placeholder="Nama"  required="">
 					<textarea name="comment" placeholder="Tulis komentar anda di sini..." required=""></textarea>
 					<input type="submit" value="Komentar">
 				</form>
 			</div>
+			<br>
+	
+	<div class="welcome">
+		<div class="container">
+			<div class="grid_3 grid_5 w3-agileits">
+				@foreach($artikel->komentar as $data)
+				<div class="tab-pane" id="timeline">
+                    	<div class="timeline-item">
+                      	<span class="time"><i class="fa fa-clock-o"></i>{{ $data->created_at }}</span>
 
-			@foreach ($artikel->id_komentar()->get() as $data)
-			<div class="">
-				<div class="panel-body">
-					<div class="title">
-						<h3>
-							<span>{{ $data->name }}</span>
-						</h3>
-						{{ $data->comment }}
-					</div>
+                      	<h4 class="timeline-header"><a href="#">{{ $data->name }}</a> :</h4>
+
+                      	<div class="timeline-body">
+                        <p><b>{{ $data->comment }}</b></p>
+                      	</div>
+                    	</div>
 				</div>
+				@endforeach
+				<br>
+				<br>
+				<!-- <div class="tab-pane" id="timeline">
+                    	<div class="timeline-item">
+                      	<span class="time"><i class="fa fa-clock-o"></i>12 november	</span>
+
+                      	<h3 class="timeline-header"><a href="#">sayaya</a>berkomentar</h3>
+
+                      	<div class="timeline-body">
+                        haiiiiiii
+                      	</div>
+                    	</div>
+				</div> -->
 			</div>
-			@endforeach
+		</div>
+	</div>
+
+
 </div>
 </div>
 @endsection

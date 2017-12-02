@@ -7,12 +7,12 @@ use Illuminate\Database\Eloquent\Model;
 class Komentar extends Model
 {
     protected $fillable = [
-    	'name', 'comment'
+    	'name', 'comment', 'id_artikel', 'created_at'
     ];
-    protected $table = 'komentars';
+    protected $table = 'komentar';
 
     public function artikel()
     {
-    	return $this->belongsTo(Artikel::class);
+    	return $this->belongsTo('App\Artikel', 'id_artikel');
     }
 }

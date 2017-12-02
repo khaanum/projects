@@ -7,14 +7,14 @@ use Illuminate\Database\Eloquent\Model;
 class Artikel extends Model
 {
    protected $fillable = [
-    	'title', 'content', 'image', 'slug', 'id_komentar'
+    	'title', 'content', 'image', 'slug'
     ];
-    protected $table = 'artikels'; //sesuai dengan nama database
+    protected $table = 'artikel'; //sesuai dengan nama database
 
-    public function komentars()
+    public function komentar()
     {
-    	// return $this->hasMany('App\Komentar', 'id_komentar');
-    	return $this->hasMany(Komentar::class);
+    	return $this->hasMany('App\Komentar', 'id_artikel');
+    	// return $this->hasMany(Komentar::class);
     }
 
 }

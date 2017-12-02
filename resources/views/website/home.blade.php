@@ -40,12 +40,13 @@
 			<div class="col-md-3 col-sm-3 col-xs-6 popular-posts-grid">	
 				<div class="popular-posts-grid1">
 					<a href="single.html"><img src="../adminpage/img/{{$data->image}}" alt=" " class="img-responsive"></a>
-					<h4><a href="/web/artikel/single">{{$data->title}}</a></h4>
-					<p>{!! str_limit($data->content,100) !!}</p>
+					<h4><a href="{{ route('artikel.show', $data->slug) }}">{{$data->title}}</a></h4>
+					<p>{!! str_limit($data->content,10) !!}</p>
 				</div>
 			</div>
 				@endforeach
 				<div class="clearfix"> </div>
+				{{ $artikel->render() }}
 		</div>
 	</div>
 </div>

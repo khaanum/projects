@@ -88,11 +88,35 @@
 	<div class="w3about-slid agileits-w3layouts"> 
 		<div class="container">
 			<div class="about-slid-info"> 
-				<h4>Data Pegawai Balai Pemantapan Kawasan Hutan Wilayah III Pontianak</h4>
-				
+				<h4>Sub Bagian Pemolaan Kawasan Hutan</h4>
+				<div class="well w3l">
+					
+				</div>
 			</div>
 		</div>
 	</div>
 	<!-- //about-slid -->
+	
+	<div class="welcome">
+	<div class="container">
+	<div class="agileits-title">
+		<h3>Daftar Tabel Pemolaan Kawasan Hutan</h3>
+	</div>	
+	<div class="welcome-agileinfo">
+		@foreach($pkh as $data)
+		<div class="col-md-4 col-xs-6 welcome-grid agileits-w3layouts">  
+			<div class="col-xs-2 welcome-grid-left">
+				<span class="glyphicon glyphicon-tasks" aria-hidden="true"></span>
+			</div>
+			<div class="col-xs-10 welcome-grid-right">
+				<h4><a href="/web/pkh/{{$data->id}}">{{$data->title_pkh}}</a></h4>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+		@endforeach
+	<div class="clearfix"> </div>
+	</div>
+	</div>
+	</div>
 
 @endsection

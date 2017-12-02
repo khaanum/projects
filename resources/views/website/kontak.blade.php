@@ -14,12 +14,18 @@
 			</div> 
 			<div class="contact-agileinfo"> 
 				<div class="col-md-7 contact-right">				
-					<form action="#" method="post"> 
-						<input type="text" name="name" placeholder="Name" required="">
+					<form action="{{ route('website.kontak.store') }}" method="POST"> 
+						
+						{{ csrf_field() }} 
+						
+						{{ method_field('POST') }}
+						
+						<input type="text" name="name" placeholder="Nama" required="">
 						<input type="email" name="email" placeholder="Email" required=""> 
 						<input type="text" name="phone_number" placeholder="Telephone" required="">
-						<textarea name="message" placeholder="Message..." required=""></textarea>
-						<input type="submit" value="Submit" >
+						<textarea name="message" placeholder="Pesan..." required=""></textarea>
+						<button type="submit" class="btn btn-default btn-block">Kirim</button> 
+					</form>
 				</div>
 				<div class="col-md-5 contact-left">
 					<p>"Balai Pemantapan Kawasan Hutan (BPKH) merupakan Unit Pelaksana Teknis (UPT) dibawah Direktorat Jenderal Planologi berasarkan Surat Keputusan Menteri Kehutanan Nomor 6188/kpts-II/2002 Tanggal 10 Juni 2002."</p>

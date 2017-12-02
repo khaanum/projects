@@ -3,16 +3,24 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\
+use App\Artikel;
+use App\Komentar;
 
 class KomentarController extends Controller
 {
     //
-    public function store(Request $request, Artikel $artikel)
+	
+    
+    public function store(Request $request, $id)
     {
-       // dd(request('message'));
+        $artikel = Artikel::findOrFail($id);
+
         Komentar::create([
-            'comment' => request('comment')
-        ]);
+        	'name' => $request->name,
+            'comment' => $request->comment,
+            'id_artikel' => $id,
+        ]);	
+
+        return redirect('web/artikel/'.$artikel->slug);
     }
 }

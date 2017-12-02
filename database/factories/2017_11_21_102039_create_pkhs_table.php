@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreatePkh11sTable extends Migration
+class CreatePkhsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,10 @@ class CreatePkh11sTable extends Migration
      */
     public function up()
     {
-        Schema::create('pkh11s', function (Blueprint $table) {
+        Schema::create('pkhs', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('jpeta');
-            $table->string('skala');
-            $table->string('jumlah');
-            $table->string('lokasi');
-            $table->string('keterangan');
+            $table->string('title_pkh');
+            $table->string('file_pkh');
             $table->timestamps();
         });
     }
@@ -31,6 +28,6 @@ class CreatePkh11sTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('pkh11s');
+        Schema::dropIfExists('pkhs');
     }
 }

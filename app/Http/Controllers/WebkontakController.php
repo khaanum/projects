@@ -12,4 +12,10 @@ class WebkontakController extends Controller
     	return view ('website.kontak');
     }
 
+    public function store(Request $request)
+    {
+    	Kontak::create($request->all());
+        return back();
+    }
+
 }

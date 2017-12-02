@@ -23,11 +23,13 @@
               </div>
               <!-- /.box-header -->
               <div class="box-body">
+                <a type="button" class="btn bg-navy margin" href="/admin/isdh/create"><td>Tambah Data</a>
                 <table id="example1" class="table table-bordered table-striped">
                     <thead>
                       <tr>
                         <th>Id</th>
-                        <th>Nama Konten</th>
+                        <th>Daftar Konten</th>
+                        <th>File ISDH</th>
                         <th style="width: 120px">Action</th>
                       </tr>  
                     </thead>
@@ -35,15 +37,16 @@
                     @foreach($isdh as $data)
                     <tr>
                       <td>{{$data->id}}</td>
-                      <td>{{$data->title}}</td>
+                      <td>{{$data->title_isdh}}</td>
+                      <td>{{$data->file_isdh}}</td>
                       <td>
                         <div class="btn-group-center">
                           <form method="POST" action="/admin/isdh/{{$data->id}}/delete">
-                             <a type="button" class="btn btn-info" href="/admin/isdh/{{$data->id}}"><i class="fa fa-eye"></i></a>
-                            <a type="button" class="btn btn-success" href="/admin/isdh/{{$data->id}}/edit"><i class="fa fa-edit"></i></a>
+                            <!-- <a type="button" class="btn btn-info" href="/admin/isdh/{{$data->id}}"><i class="fa fa-eye"></i></a>
+                            <a type="button" class="btn btn-success" href="/admin/isdh/{{$data->id}}/edit"><i class="fa fa-edit"></i></a> -->
 
                             {{method_field('DELETE')}}
-                            <button type="delete" class="btn btn-danger" href="/admin/isdh/{{$data->id}}/delete"><i class="fa fa-trash"></i></button>{{csrf_field()}}
+                            <button type="delete" class="btn btn-danger" href="/admin/isdh/{{$data->id}}/delete"><i class="fa fa-trash"></i> Hapus</button>{{csrf_field()}}
                           </form>
                         </div>
                       </td>

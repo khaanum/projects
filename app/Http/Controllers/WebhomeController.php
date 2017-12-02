@@ -16,7 +16,8 @@ class WebhomeController extends Controller
 
     public function show($id)
     {
-    	$artikel = Artikel::where('title', '=')->first();
+        $artikel = Artikel::where('slug', $slug)->first();
+    	// $artikel = Artikel::where('title', '=', 'id')->first();
     	return view('website.artikel_single', compact('artikel'));
     }
 

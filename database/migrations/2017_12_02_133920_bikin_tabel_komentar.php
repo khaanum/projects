@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreatePkh10sTable extends Migration
+class BikinTabelKomentar extends Migration
 {
     /**
      * Run the migrations.
@@ -13,14 +13,14 @@ class CreatePkh10sTable extends Migration
      */
     public function up()
     {
-        Schema::create('pkh10s', function (Blueprint $table) {
+        Schema::create('komentar', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('lokasi');
-            $table->string('kab');
-            $table->float('luas');
-            $table->integer('tahun');
-            $table->string('ket');
+            $table->string('name');
+            $table->string('comment');
+            $table->integer('id_artikel')->unsigned();
             $table->timestamps();
+
+            $table->foreign('id_artikel')->references('id')->on('artikel')->onDelete('cascade');
         });
     }
 
@@ -31,6 +31,6 @@ class CreatePkh10sTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('pkh10s');
+        Schema::dropIfExists('komentar');
     }
 }

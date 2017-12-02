@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Artikel;
+use App\Komentar;
 
 class WebartikelController extends Controller
 {
@@ -28,5 +29,4 @@ class WebartikelController extends Controller
         return view('website.artikel_single', compact('artikel'));
     }
 
-    
 }

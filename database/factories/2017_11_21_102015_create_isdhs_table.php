@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateKomentarsTable extends Migration
+class CreateIsdhsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,10 @@ class CreateKomentarsTable extends Migration
      */
     public function up()
     {
-        Schema::create('komentars', function (Blueprint $table) {
+        Schema::create('isdhs', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name');
-            $table->string('comment');
+            $table->string('title_isdh');
+            $table->string('file_isdh');
             $table->timestamps();
         });
     }
@@ -28,6 +28,6 @@ class CreateKomentarsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('komentars');
+        Schema::dropIfExists('isdhhs');
     }
 }

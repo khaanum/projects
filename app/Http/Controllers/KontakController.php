@@ -21,6 +21,15 @@ class KontakController extends Controller
     public function store(Request $request)
     {
         //
+        // Kontak::create([
+        //     'name' => $request->name,
+        //     'email' => $request->email,
+        //     'phone_number' => $request->phone_number,
+        //     'message' => $request->message,
+        // ]); 
+
+        // return redirect('web/kontak/');
+        
     }
 
     public function show($id)

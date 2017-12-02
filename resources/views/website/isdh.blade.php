@@ -1,4 +1,5 @@
 @extends('website.layout.app2')
+
 @section('page-title')
 		Informasi Sumber Daya Hutan
 @endsection
@@ -68,11 +69,37 @@
 	<div class="w3about-slid agileits-w3layouts"> 
 		<div class="container">
 			<div class="about-slid-info"> 
-				<h4>Data Pegawai Balai Pemantapan Kawasan Hutan Wilayah III Pontianak</h4>
-				
+				<h4>Sub Bagian Informasi Sumber Daya Hutan</h4>
+				<div class="well w3l">
+					
+				</div>
 			</div>
 		</div>
 	</div>
 	<!-- //about-slid -->
+	
+	<div class="welcome">
+	<div class="container">
+	<div class="agileits-title">
+		<h3>Daftar Tabel Informasi Sumber Daya Hutan</h3>
+	</div>	
+	<div class="welcome-agileinfo">
+		@foreach($isdh as $data)
+		<div class="col-md-4 col-xs-6 welcome-grid agileits-w3layouts">  
+			<div class="col-xs-2 welcome-grid-left">
+				<span class="glyphicon glyphicon-tasks" aria-hidden="true"></span>
+			</div>
+			<div class="col-xs-10 welcome-grid-right">
+				<h4><a href="/web/isdh/{{$data->id}}">{{$data->title_isdh}}</a></h4>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+		@endforeach
+	<div class="clearfix"> </div>
+	</div>
+	</div>
+	</div>
+	
 
 @endsection
+

@@ -23,7 +23,7 @@
               </div>
               <!-- /.box-header -->
               <div class="box-body">
-                <a type="button" class="btn bg-navy margin" href="/admin/peraturan/create"><td>Tambah Peraturan</a>
+                <a type="button" class="btn bg-navy margin" href="/admin/peraturan/create"><td>Tambah Data</a>
                   <table id="example1" class="table table-bordered table-striped">
                     <thead>
                       <tr>
