@@ -31,6 +31,11 @@ class PeraturanController extends Controller
 
     public function store(Request $request)
     {
+        
+        $this->validate($request, array(
+                'title' => 'required|max:255',
+                'file' => 'required',
+        ));
         //
         $peraturan = new Peraturan;
         $peraturan->title = $request->title;

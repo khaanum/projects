@@ -1,4 +1,5 @@
 @extends('website.layout.app2')
+
 @section('page-title')
 		Pemolaan Kawasan Hutan
 @endsection

@@ -25,6 +25,7 @@ Route::group(['middleware' => 'auth'], function(){
 	
 	//Kontak
 	Route::get('/admin/kontak', 'KontakController@index')->name('a-kontak');
+	Route::delete('/admin/kontak/{id}/delete', 'KontakController@destroy')->name('admin.a-kontak.delete');
 	
 	//Organisasi
 	Route::get('/admin/organisasi', 'OrganisasiController@index')->name('a-organisasi');

@@ -14,7 +14,16 @@
             <li class="nonactive"><a href="/admin/artikel/create"><i class="fa fa-plus"></i> Artikel</a></li>
           </ol>
 </section>
-
+                @if (count($errors)>0)
+                  <div class="alert alert-danger alert-dismissible">
+                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                    <ul>
+                      @foreach($errors->all() as $error)
+                      <li>{{$error}}</li>
+                      @endforeach
+                    </ul>
+                  </div>
+                @endif
 <!-- Main content -->
     <section class="content">
 <form method="POST" action="{{route('admin.a-artikel.store')}}" enctype="multipart/form-data"> 
@@ -37,7 +46,7 @@
               <br>
               <div class="form-group">
                   <label for="image">Gambar</label>
-                  <input type="file" id="image" name="image">
+                  <input type="file" id="image" name="image" required>
               </div>
             </div>
             <div class="box-footer">
@@ -51,37 +60,8 @@
       <!-- ./row -->
     </form>
     </section>
-
+@include('admin.ckeditor')
 
 @endsection
 
-<!-- <section class="content">
-  <form method="POST" action="{{route('admin.a-artikel.store')}}"> 
-    {{ csrf_field() }} 
-    {{ method_field('POST') }}
-    
-        <div class="box box-success">
-              <div class="box-header">
-                <i class=" fa fa-pencil-square-o"></i>
-                <h3 class="box-title">Tambah Artikel</h3>                            
-              </div>
-                
-              <div class="box-body pad">
-                <input class="form-control input-lg" type="text" placeholder="Title">
-                <br>
-                <form>
-                    <textarea class="textarea" name="content" style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
-                </form>
-                <div class="form-group">
-                  <label for="exampleInputFile">File input</label>
-                  <input type="file" id="exampleInputFile">
-                </div>
-              </div>
-
-                <div class="box-footer">
-                  <input type="submit" class="btn btn-primary" value="Publish">
-                </div>
-        </div>
-  </form>
-</section> -->
 

@@ -1,5 +1,9 @@
 @extends('website.layout.app2')
 
+@section('page-title')
+	Kontak
+@endsection
+
 @section('content')
 
 	<!-- contact -->
@@ -7,8 +11,7 @@
 		<div class="container">  
 			<div class="map"> 
 				<div class="agileits-title">
-					<h3>How To Find Us</h3>
-					<p>Mauris rutrum turpis eget tincidunt eleifend vestibulum condimentum mollis tellus eu magna laoreet.</p>
+					<h3>Kontak BPKH Wilayah III Pontianak</h3>
 				</div> 
 				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4376542.827441857!2d133.94238155277205!3d-25.73870281693212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2b2bfd076787c5df%3A0x538267a1955b1352!2sAustralia!5e0!3m2!1sen!2sin!4v1439377130002" allowfullscreen></iframe>
 			</div> 

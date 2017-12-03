@@ -24,6 +24,12 @@ class PegawaiController extends Controller
     
     public function store(Request $request)
     {
+        $this->validate($request, array(
+                'nama_pegawai' => 'required|max:255',
+                'nip' => 'required',
+                'gol' => 'required',
+                'jabatan' => 'required'
+        ));
         // dd($request->all());
         pegawai::create($request->all());
         return redirect('/admin/pegawai');

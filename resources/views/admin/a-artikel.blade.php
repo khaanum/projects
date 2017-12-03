@@ -19,6 +19,9 @@
 			<div class="box box-success">
             	<!-- /.box-header -->
             	<div class="box-body">
+
+            		
+
             		<a type="button" class="btn bg-navy margin" href="/admin/artikel/create"><td>Tambah Artikel</a>
               		<table id="example1" class="table table-bordered table-striped">
 		                <thead>
@@ -59,4 +62,6 @@
     	</div>
 	</div>
 </section>
+
+@include('admin.layout.partial.data_table')
 @endsection

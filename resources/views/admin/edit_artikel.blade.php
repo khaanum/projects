@@ -57,5 +57,5 @@
     </form>
     </section>
 
-
+    @include('admin.ckeditor')
 @endsection

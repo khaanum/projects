@@ -50,5 +50,7 @@ class KontakController extends Controller
     public function destroy($id)
     {
         //
+        $kontak = Kontak::find($id)->delete();
+        return redirect('/admin/kontak');
     }
 }

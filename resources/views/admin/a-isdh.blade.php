@@ -42,9 +42,6 @@
                       <td>
                         <div class="btn-group-center">
                           <form method="POST" action="/admin/isdh/{{$data->id}}/delete">
-                            <!-- <a type="button" class="btn btn-info" href="/admin/isdh/{{$data->id}}"><i class="fa fa-eye"></i></a>
-                            <a type="button" class="btn btn-success" href="/admin/isdh/{{$data->id}}/edit"><i class="fa fa-edit"></i></a> -->
-
                             {{method_field('DELETE')}}
                             <button type="delete" class="btn btn-danger" href="/admin/isdh/{{$data->id}}/delete"><i class="fa fa-trash"></i> Hapus</button>{{csrf_field()}}
                           </form>
@@ -60,4 +57,6 @@
       </div>
   </div>
 </section>
+
+  @include('admin.layout.partial.data_table')
 @endsection

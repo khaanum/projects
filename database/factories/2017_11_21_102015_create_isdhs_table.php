@@ -11,7 +11,7 @@ class CreateIsdhsTable extends Migration
      *
      * @return void
      */
-    public function up()
+     public function up()
     {
         Schema::create('isdhs', function (Blueprint $table) {
             $table->increments('id');
@@ -28,6 +28,6 @@ class CreateIsdhsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('isdhhs');
+        Schema::dropIfExists('isdhs');
     }
 }

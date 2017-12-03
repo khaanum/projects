@@ -59,4 +59,5 @@
       </div>
   </div>
 </section>
+  @include('admin.layout.partial.data_table')
 @endsection

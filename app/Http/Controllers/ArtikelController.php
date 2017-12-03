@@ -25,7 +25,8 @@ class ArtikelController extends Controller
         //validate the data
         $this->validate($request, array(
                 'title' => 'required|max:255',
-                'content' => 'required'
+                'content' => 'required',
+                'image' => 'image|mimes:jpg,png,jpeg'
         ));
 
         $slug = str_slug($request->title, '-');

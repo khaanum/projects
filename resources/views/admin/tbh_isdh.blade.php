@@ -14,7 +14,16 @@
             <li class="nonactive"><a href="/admin/isdh/create"></a>ISDH</li>
           </ol>
 </section>
-
+    @if (count($errors)>0)
+      <div class="alert alert-danger alert-dismissible">
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+        <ul>
+          @foreach($errors->all() as $error)
+          <li>{{$error}}</li>
+          @endforeach
+        </ul>
+      </div>
+    @endif
 
 <section class="content">
     <div class="form-group">
@@ -33,16 +42,16 @@
 
                     <div class="box-body">
                       <div class="form-group">
-                        <label class="col-md-3 control-label" for="title_isdh">Judul</label>
+                        <label class="col-md-3 control-label" for="title_isdh">Nama File</label>
 
                         <div class="col-md-7">
-                          <input type="text" class="form-control" id="title_isdh" placeholder="judul peraturan" name="title_isdh" >
+                          <input type="text" class="form-control" id="title_isdh" placeholder="nama file" name="title_isdh" >
                         </div>
                       </div><br>
                       <div class="form-group">
                         <label class="col-md-3 control-label" for="file">Upload File</label>
                         <div class="col-md-7">
-                            <input class="form-control" type="file" id="file_isdh" name="file_isdh">
+                            <input class="form-control" type="file" id="file" name="file_isdh">
                       </div><br>
                     </div>
                     <!-- /.box-body -->

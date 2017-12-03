@@ -26,6 +26,7 @@
               		<table id="example1" class="table table-bordered table-striped">
 		                <thead>
 			                <tr>
+			             	  <th>No</th>	
 			                  <th>Nama</th>
 			                  <th>Email</th>
 			                  <th>No.Hp</th>
@@ -36,22 +37,22 @@
 		                <tbody>
 		                	@foreach($kontak as $data)
 							<tr>
+								<td>{{$data->id}}</td>
 								<td>{{$data->name}}</td>
 								<td>{{$data->email}}</td>
 								<td>{{$data->phone_number}}</td>
 								<td>{{$data->message}}</td>
-
 								<td>
-								<div class="btn-group-center">
-								<form method="POST" action="/admin/Kontak/{{$data->id}}/delete">
-			                	<a type="button" class="btn btn-success" href="/admin/Kontak/{{$data->id}}/edit">Edit</a>
-			                	<!-- button edit -->
-			                	{{method_field('DELETE')}}
-			                	<button type="submit" class="btn btn-danger" href="/admin/Kontak/{{$data->id}}/delete">Delete</button>
-			                	<input type="hidden" name="delete" value="delete">{{csrf_field()}}
-			                 	</form>
-			                    </div>
-                  			</td>
+									
+
+									<div class="btn-group-center">
+										<form method="POST" action="/admin/kontak/{{$data->id}}/delete">
+					                	{{method_field('DELETE')}}
+					                	<button type="submit" class="btn btn-danger" href="/admin/Kontak/{{$data->id}}/delete"><i class="fa fa-trash"></i></button>
+					                	<input type="hidden" name="delete" value="delete">{{csrf_field()}}
+					                 	</form>
+				                    </div>
+                  				</td>
 							</tr>
 							@endforeach
 		                </tbody>
@@ -61,4 +62,6 @@
     	</div>
 	</div>
 </section>
+
+			@include('admin.layout.partial.data_table')
 @endsection

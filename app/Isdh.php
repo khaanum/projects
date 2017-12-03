@@ -7,7 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 class Isdh extends Model
 {
     protected $fillable = [
-    	'title_isdh', 'file_isdh'
+    	'title_isdhh', 'file_isdh'
     ];
     protected $table = 'isdhs';
 }
+

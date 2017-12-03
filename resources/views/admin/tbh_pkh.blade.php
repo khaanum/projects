@@ -14,8 +14,18 @@
             <li class="nonactive"><a href="/admin/pkh/create"></a>PKH</li>
           </ol>
 </section>
-
-
+  @if (count($errors)>0)
+  <div class="box-body">
+    <div class="alert alert-danger alert-dismissible">
+      <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+      <ul>
+        @foreach($errors->all() as $error)
+        <li>{{$error}}</li>
+        @endforeach
+      </ul>
+    </div>
+  </div>
+  @endif
 <section class="content">
     <div class="form-group">
         <div class="box box-success">

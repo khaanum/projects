@@ -43,5 +43,7 @@
         </div>
       </section>
 
+      @include('admin.ckeditor')
+
 @endsection
 

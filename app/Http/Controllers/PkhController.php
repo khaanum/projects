@@ -23,6 +23,11 @@ class PkhController extends Controller
     public function store(Request $request)
     {
         //
+        $this->validate($request, array(
+                'title_pkh' => 'required|max:255',
+                'file_pkh' => 'required|mimes:pdf'
+        ));
+
         $pkh = new Pkh;
         $pkh->title_pkh = $request->title_pkh;
         if ($request->hasFile('file_pkh')){
@@ -42,60 +47,16 @@ class PkhController extends Controller
     public function show($id)
     {
         
-        // switch ($id) {
-        //     case 1:
-        //         return view('admin.a-pkh1', compact('pkh'));
-        //         break;
-        //     case 2:
-        //         return view('admin.a-pkh2', compact('pkh'));
-        //         break;
-        //     case 3:
-        //         return view('admin.a-pkh3', compact('pkh'));
-        //         break;
-        //     case 4:
-        //         return view('admin.a-pkh4', compact('pkh'));
-        //         break;
-        //     case 5:
-        //         return view('admin.a-pkh5', compact('pkh'));
-        //         break;
-        //     case 6:
-        //         return view('admin.a-pkh6', compact('pkh'));
-        //         break;
-        //     case 7:
-        //         return view('admin.a-pkh7', compact('pkh'));
-        //         break;
-        //     case 8:
-        //         return view('admin.a-pkh8', compact('pkh'));
-        //         break;
-        //     case 9:
-        //         return view('admin.a-pkh9', compact('pkh'));
-        //         break;
-        //     case 10:
-        //         return view('admin.a-pkh10', compact('pkh'));
-        //         break;
-        //     case 11:
-        //         return view('admin.a-pkh11', compact('pkh'));
-        //         break;
-        //     case 12:
-        //         return view('admin.a-pkh12', compact('pkh'));
-        //         break;
-        //     default:
-        //         # code...
-        //         break;
-        // }
     }
 
     public function edit($id)
     {
-        // $pkh = Pkh::find($id);
-        // return view('admin.edit_pkh', compact('pkh','id'));
+    
     }
 
     public function update(Request $request, $id)
     {
-        // $pkh = Pkh::find($id);
-        // $pkh->update($request->all()); 
-        // return redirect('/admin/pkh');
+     
     }
 
     public function destroy($id)
