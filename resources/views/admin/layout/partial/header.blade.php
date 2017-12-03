@@ -15,30 +15,22 @@
 
       <div class="navbar-custom-menu">
         <ul class="nav navbar-nav">
-          
-                <li class="nav-item dropdown">
+            <li class="nav-item">
                     <a class="nav-link dropdown-toggle" id="atul" data-toggle="dropdown" href="#">
-                        <i class="fa fa-user fa-fw"></i> <span class="hidden-xs">{{ Auth::user()->name }}</span>
-                        <i class="fa fa-caret-down"></i>
+                      <i class="fa fa-user fa-fw"></i> <span class="hidden-xs">{{ Auth::user()->name }}</span>
                     </a>
-                    
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#"><i class=" fa fa-user fa-fw"></i> User Profile</a></li>
-                        <li><a class="dropdown-item" href="#"><i class="fa fa-gear fa-fw"></i> Settings</a></li>
-                        <li><a class="dropdown-item" href="{{ route ('logout') }}" 
-                              onclick="event.preventDefault();
-                                document.getElementById('logout-form').submit();"><i class="fa fa-sign-out fa-fw"></i> Logout</a></li>
-                        <form id="logout-form" action="logout" method="get" style="display: none;">
-                          {{ csrf_field() }}
-                        </form>
-                    </ul>
-                </li>
+            </li>
+             <li class="nav-item">
+                <a class="dropdown-item" href="{{ route ('logout') }}" 
+                    onclick="event.preventDefault();
+                    document.getElementById('logout-form').submit();"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                <form id="logout-form" action="logout" method="get" style="display: none;">
+                  {{ csrf_field() }}
+                </form>
+              </li>
+
+                
         </ul>
       </div>
-
-     
-
     </nav>
-
-
   </header>

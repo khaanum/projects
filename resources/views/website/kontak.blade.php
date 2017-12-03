@@ -13,7 +13,9 @@
 				<div class="agileits-title">
 					<h3>Kontak BPKH Wilayah III Pontianak</h3>
 				</div> 
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4376542.827441857!2d133.94238155277205!3d-25.73870281693212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2b2bfd076787c5df%3A0x538267a1955b1352!2sAustralia!5e0!3m2!1sen!2sin!4v1439377130002" allowfullscreen></iframe>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.8159246275263!2d109.35283171429488!3d-0.06278829995418538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e1d59f2c9ec0b7d%3A0x1c20619b2f9c5eb1!2sJl.+Jenderal+Ahmad+Yani+No.121%2C+Bansir+Darat%2C+Pontianak+Tenggara%2C+Kota+Pontianak%2C+Kalimantan+Barat+78124!5e0!3m2!1sen!2sid!4v1512318646494" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+				<!-- <iframe style="padding-bottom: 2em;" src="https://www.google.com/maps/place/Komplek+Citra+Pramuka/@-0.0053986,109.2792396,17z/data=!3m1!4b1!4m5!3m4!1s0x2e1d5f536b0fe011:0x8d757d815008cd5d!8m2!3d-0.0053986!4d109.2814283?hl=en" width="100%" height="400px" frameborder="0" style="border:0" allowfullscreen></iframe>
+ -->
 			</div> 
 			<div class="contact-agileinfo"> 
 				<div class="col-md-7 contact-right">				
