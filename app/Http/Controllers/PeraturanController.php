@@ -12,10 +12,10 @@ class PeraturanController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
         $peraturan = Peraturan::all();
-        return view ('admin.a-peraturan', compact('peraturan'));
+        return view ('admin.a-peraturan', compact('peraturan'))->with('i', ($request->input('page', 1) - 1) * 7);
     }
 
     /**
@@ -49,7 +49,7 @@ class PeraturanController extends Controller
 
         $peraturan->save();
         // peraturan::create($request->all());
-        return redirect('/admin/peraturan');
+        return redirect('/admin/peraturan')->with('success','data berhasil ditambah');
     }
 
     public function show($id)

@@ -4,14 +4,14 @@
 
       <section class="content-header">
           <h4>
-            Struktur Organisasi
+            organisasi
             <small>BPKH Wilayah III Pontianak</small>
           </h4>
 
           <ol class="breadcrumb">
             <li><a href="/admin/dashboard"><i class="fa fa-dashboard"></i>Home</a></li>
             <li><a href="#"><i class="fa fa-dashboard"></i>Profil</a></li>
-            <li class="active"><a href="/admin/organisai">Struktur Organisasi</a></li>
+            <li class="active"><a href="/admin/organisasi">organisasi</a></li>
           </ol>
       </section>
 
@@ -22,25 +22,24 @@
             <div class="col-md-12">
                 <div class="box box-success">
                   <div class="box-header with-border">
-                    <i class="fa fa-tag"></i>
-                    <h3 class="box-title">Deskripsi Struktur Organisasi</h3>
+                   <i class="fa fa-tag"></i>
+                    <h3 class="box-title">Deskripsi organisasi</h3>
                   </div>
             <!-- /.box-header -->
                   <div class="box-body">
-                    <dl class="dl-horizontal">
+                    <ul class="list-unstyled">
                       @foreach($organisasi as  $data)
-                        <p>{!!$data->content!!}</p>
+                      <p>{!!$data->content!!}</p>
                       @endforeach
-                    </dl>
+                    </ul>
+                  </div>
+                  <div class="box-footer">
+                          <a class="btn bg-olive margin" href="/admin/organisasi/{$id}/edit"><i class="fa fa-pencil"></i><td>Ubah</a>
                   </div>
             <!-- /.box-body -->
-                    <div class="box-footer">
-                      <a class="btn bg-olive margin" href="/admin/organisasi/{$id}/edit"><i class="fa fa-pencil"></i><td>ubah</a> 
-                    </div>
                 </div> 
             </div>
         </div>  
       </section>
-</div>
 
 @endsection

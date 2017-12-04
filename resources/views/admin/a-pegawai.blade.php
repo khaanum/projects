@@ -21,6 +21,17 @@
 	            	<i class="fa fa-table"></i>
 	              <h3 class="box-title">Tabel Data Pegawai</h3>
 	            </div>
+              @if ($message = Session::get ('success'))
+                <div class="alert alert-success alert-dismissible">
+                  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                  <p>{{ $message }}</p>
+                </div>
+              @elseif($message = Session::get ('yups'))
+                <div class="alert alert-warning alert-dismissible">
+                  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                  <p>{{ $message }}</p>
+                </div>
+              @endif
             	<!-- /.box-header -->
             	<div class="box-body">
             		<a type="button" class="btn bg-navy margin" href="/admin/pegawai/create"><td>Tambah Data</a>
@@ -36,20 +47,22 @@
 		                	</tr>
 				        </thead>
 		                <tbody>
-		                	@foreach($pegawai as $data)
+		                	<?php $no = $pegawai ?>
+                    	@foreach($pegawai as $data)
+                      		<?php $no++ ?>
 							<tr>
-								<td>{{$data->id}}</td>
+								<td>{{ ++$i }}</td>
 								<td>{{$data->nama_pegawai}}</td>
 								<td>{{$data->nip}}</td>
 								<td>{{$data->gol}}</td>
 								<td>{{$data->jabatan}}</td>
 								<td>
 								<div class="btn-group-center">
-								<form method="POST" action="/admin/pegawai/{{$data->id}}/delete">
+								<form id="form{{$data->id}}" method="POST" action="/admin/pegawai/{{$data->id}}/delete">
 			                	<a type="button" class="btn btn-success" href="/admin/pegawai/{{$data->id}}/edit"><i class="fa fa-edit"></i></a>
 			                	<!-- button edit -->
 			                	{{method_field('DELETE')}}
-			                	<button type="submit" class="btn btn-danger" href="/admin/pegawai/{{$data->id}}/delete"><i class="fa fa-trash"></i></button>
+			                	<button id="del{{$data->id}}" type="button" class="btn btn-danger" href="/admin/pegawai/{{$data->id}}/delete"><i class="fa fa-trash"></i></button>
 			                	<input type="hidden" name="delete" value="delete">{{csrf_field()}}
 			                 	</form>
 			                    </div>
@@ -63,6 +76,28 @@
     	</div>
 	</div>
 </section>
+
+<script type="text/javascript" src="{{asset('adminpage/sweetalert.min.js')}}"></script>
+<script type="">
+  @foreach ($pegawai as $data)
+    $('button#del{{$data->id}}').on('click', function(){
+      swal({
+        title: "Anda Yakin?",
+        text: "Data yang terhapus tidak dapat dikembalikan!",
+        type: "warning",
+        showCancelButton: true,
+        cancelButtonText: "Tidak",
+        confirmButtonClass: "btn-danger",
+        confirmButtonText: "Ya",
+        closeOnConfirm: false
+      },
+      function (){
+        $("#form{{$data->id}}").submit();
+      });
+    })
+    @endforeach
+</script>
+
 
 @include('admin.layout.partial.data_table')
 @endsection

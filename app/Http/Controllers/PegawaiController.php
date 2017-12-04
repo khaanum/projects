@@ -8,10 +8,10 @@ use App\Pegawai;
 class PegawaiController extends Controller
 {
     
-    public function index()
+    public function index(Request $request)
     {
         $pegawai = Pegawai::all(); //utk manggil semua data pegawai
-        return view ('admin.a-pegawai', compact('pegawai'));
+        return view ('admin.a-pegawai', compact('pegawai'))->with('i', ($request->input('page', 1) - 1) * 7);
     }
 
     
@@ -32,7 +32,7 @@ class PegawaiController extends Controller
         ));
         // dd($request->all());
         pegawai::create($request->all());
-        return redirect('/admin/pegawai');
+        return redirect('/admin/pegawai')->with('success','data berhasil ditambah');
     }
 
    
@@ -54,7 +54,7 @@ class PegawaiController extends Controller
         // return $request->all(); //untuk mengecek data 
         $pegawai = Pegawai::find($id);
         $pegawai->update($request->all()); 
-        return redirect('/admin/pegawai');
+        return redirect('/admin/pegawai')->with('yups', 'data berhasil di ubah');
     }
 
     

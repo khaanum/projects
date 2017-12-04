@@ -22,6 +22,9 @@ Route::group(['middleware' => 'auth'], function(){
 	Route::delete('/admin/artikel/{id}/delete', 'ArtikelController@destroy')->name('admin.a-artikel.delete');
 	Route::get('/admin/artikel/create', 'ArtikelController@create')->name('admin.a-artikel.create');
 	Route::post('/admin/artikel', 'ArtikelController@store')->name('admin.a-artikel.store');
+
+	//Komentar
+	Route::delete('/admin/edit_artikel/{id}/delete', 'AdkomentarController@destroy')->name('admin.edit_artikel.delete');
 	
 	//Kontak
 	Route::get('/admin/kontak', 'KontakController@index')->name('a-kontak');

@@ -9,10 +9,10 @@ use Session;
 class ArtikelController extends Controller
 {
    
-    public function index()
+    public function index(Request $request)
     {
         $artikel = Artikel::all();
-        return view ('admin.a-artikel', compact('artikel'));
+        return view ('admin.a-artikel', compact('artikel'))->with('i', ($request->input('page', 1) - 1) * 7);
     }
 
     public function create()
@@ -49,9 +49,7 @@ class ArtikelController extends Controller
 
         $artikel->save();
 
-        Session::flash('success', 'The article was successfully save!');
-
-        return redirect('/admin/artikel');
+        return redirect('/admin/artikel')->with('success','data berhasil ditambah');
     }
 
     public function show($id)
@@ -83,13 +81,13 @@ class ArtikelController extends Controller
             $artikel->image = $namafile;
         }
         $artikel->save($request->all());
-        return redirect('/admin/artikel');
+        return redirect('/admin/artikel')->with('yups', 'data berhasil di ubah');
     }
 
     public function destroy($id)
     {
         //
-        $artikel = Artikel::find($id)->delete();
-        return redirect('/admin/artikel');
+        $artikel = Artikel::findOrFail($id)->delete();
+        return back();
     }
 }

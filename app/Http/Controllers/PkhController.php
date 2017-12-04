@@ -8,10 +8,10 @@ use App\Pkh;
 class PkhController extends Controller
 {
     
-    public function index()
+    public function index(Request $request)
     {
         $pkh = Pkh::all(); //utk manggil semua data pkh
-        return view ('admin.a-pkh', compact('pkh'));
+        return view ('admin.a-pkh', compact('pkh'))->with('i', ($request->input ('page', 1) - 1) * 7) ;
     }
 
     public function create()
@@ -40,7 +40,7 @@ class PkhController extends Controller
 
         $pkh->save();
         // pkh::create($request->all());
-        return redirect('/admin/pkh');
+        return redirect('/admin/pkh')->with('success','data berhasil ditambah');
     }
 
     

@@ -21,6 +21,12 @@
                 <i class="fa fa-table"></i>
                 <h3 class="box-title">peraturan</h3>
               </div>
+              @if ($message = Session::get ('success'))
+                <div class="alert alert-success alert-dismissible">
+                  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                  <p>{{ $message }}</p>
+                </div>
+              @endif
               <!-- /.box-header -->
               <div class="box-body">
                 <a type="button" class="btn bg-navy margin" href="/admin/peraturan/create"><td>Tambah Data</a>
@@ -34,16 +40,18 @@
                       </tr>
                 </thead>
                     <tbody>
-                      @foreach($peraturan as $data)
+                      <?php $no = $peraturan ?>
+                    @foreach($peraturan as $data)
+                      <?php $no++ ?>
               <tr>
-                <td>{{$data->id}}</td>
+                <td>{{ ++$i }}</td>
                 <td>{{$data->title}}</td>
                 <td>{{$data->file}}</td>
                 <td>
                 <div class="btn-group-center">
-                <form method="POST" action="/admin/peraturan/{{$data->id}}/delete">
+                <form id="form{{$data->id}}" method="POST" action="/admin/peraturan/{{$data->id}}/delete">
                   {{method_field('DELETE')}}
-                  <button type="submit" class="btn btn-danger" href="/admin/peraturan/{{$data->id}}/delete"><i class="fa fa-trash"></i> Hapus</button>
+                  <button id="del{{$data->id}}" type="button" class="btn btn-danger" href="/admin/peraturan/{{$data->id}}/delete"><i class="fa fa-trash"></i> Hapus</button>
                   <input type="hidden" name="delete" value="delete">{{csrf_field()}}
                 </form>
                 </div>
@@ -57,6 +65,27 @@
       </div>
   </div>
 </section>
+
+<script type="text/javascript" src="{{asset('adminpage/sweetalert.min.js')}}"></script>
+<script type="">
+  @foreach ($peraturan as $data)
+    $('button#del{{$data->id}}').on('click', function(){
+      swal({
+        title: "Anda Yakin?",
+        text: "Data yang terhapus tidak dapat dikembalikan!",
+        type: "warning",
+        showCancelButton: true,
+        cancelButtonText: "Tidak",
+        confirmButtonClass: "btn-danger",
+        confirmButtonText: "Ya",
+        closeOnConfirm: false
+      },
+      function (){
+        $("#form{{$data->id}}").submit();
+      });
+    })
+    @endforeach
+</script>
 
     @include('admin.layout.partial.data_table')
 @endsection

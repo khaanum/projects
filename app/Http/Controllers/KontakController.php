@@ -7,10 +7,10 @@ use App\Kontak;
 
 class KontakController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
         $kontak = Kontak::all();
-        return view ('admin.a-kontak', compact('kontak'));
+        return view ('admin.a-kontak', compact('kontak'))->with('i', ($request->input('page', 1) - 1) * 7);
     }
 
     public function create()

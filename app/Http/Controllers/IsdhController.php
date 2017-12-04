@@ -8,10 +8,10 @@ use App\Isdh;
 class IsdhController extends Controller
 {
     
-    public function index()
+    public function index(Request $request)
     {
         $isdh = Isdh::all(); //utk manggil semua data isdh
-        return view ('admin.a-isdh', compact('isdh'));
+        return view ('admin.a-isdh', compact('isdh'))->with('i', ($request->input('page', 1) - 1) * 7);
     }
 
     
@@ -42,7 +42,7 @@ class IsdhController extends Controller
 
         $isdh->save();
         // isdh::create($request->all());
-        return redirect('/admin/isdh');
+        return redirect('/admin/isdh')->with('success','data berhasil ditambah');
     }
 
     

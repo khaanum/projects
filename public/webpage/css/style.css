@@ -66,7 +66,7 @@ body a:focus {
 .navbar-header h1 a {
     color: #FFFFFF;
     text-decoration: none;
-    border: 1px solid #FF7148;
+    border: 1px solid #2e755500;
     padding: .2em 0.5em;
 	display: inline-block;
 	text-transform: uppercase;
@@ -79,7 +79,7 @@ body a:focus {
 	margin: 0;
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-    color: #99abd5;
+    color: #56d6cb;
     background: none;
 }
 .navbar-nav > li {
@@ -540,7 +540,7 @@ p {
     color: #fff;
     text-decoration: none; 
 	display: inline-block;
-	border: 1px solid #FF7148;
+	border: 1px solid #ff714800;
     padding: .2em 0.5em;
 } 
 .footer-wthree-grid h3 {
@@ -907,7 +907,7 @@ ul.simplefilter {
 /*-- single-page --*/ 
 .wthree_single_grid h4 {
     font-size: 2em;
-    color: #ff7200;
+    color:#067533;
     text-transform: capitalize;
     margin-bottom: .8em;
     font-family: 'Open Sans Condensed', sans-serif;
@@ -934,7 +934,7 @@ ul.simplefilter {
     margin:3em auto 2em;
 } 
 .agile_single_banner img.img-responsive { 
-    width: 100%;
+    width: 60%;
 }   
 .wthree_single_grid1 p{ 
 	line-height:2em;
@@ -962,7 +962,7 @@ h4.w3ls-title {
 .popular-posts-grid1 h4 a {
     text-decoration: none;
     font-size: 1.1em;
-    color: #ff7200;
+    color: #067533;
     display: inline-block;
     margin: 1em 0 0.2em;
     text-transform: capitalize; 

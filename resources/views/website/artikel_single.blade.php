@@ -22,13 +22,24 @@
 				<p>{!! $artikel->content !!}</p>
 			</div> 
 			<br>
-
+			
 			<div class="write-reply">
 				<h4 class="w3ls-title">Tulis komentar</h4>
+				@if (count($errors)>0)
+                  <div class="alert alert-danger alert-dismissible">
+                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                    <ul>
+                      @foreach($errors->all() as $error)
+                      <li>{{$error}}</li>
+                      @endforeach
+                    </ul>
+                  </div>
+                @endif
 				<form action="{{ route('website.artikel_single.store', $artikel) }}" method="post">
 				{{ csrf_field() }}  
-					<input type="text" name="name" placeholder="Nama"  required="">
-					<textarea name="comment" placeholder="Tulis komentar anda di sini..." required=""></textarea>
+					<input type="text" name="name" placeholder="Nama"  required="" value="{{old('name')}}">
+					<textarea name="comment" placeholder="Tulis komentar anda di sini..." required="">{{old('comment')}}</textarea>
+					<div class="g-recaptcha" data-sitekey="6LcckTsUAAAAAESlPBcIHNBodXX8WM-yc_tiot9l"></div>
 					<input type="submit" value="Komentar">
 				</form>
 			</div>
@@ -67,7 +78,9 @@
 		</div>
 	</div>
 
+</div>
+</div>
 
-</div>
-</div>
+<script src='https://www.google.com/recaptcha/api.js'></script>
+
 @endsection

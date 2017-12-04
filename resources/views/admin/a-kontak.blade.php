@@ -35,20 +35,20 @@
 		                	</tr>
 				        </thead>
 		                <tbody>
-		                	@foreach($kontak as $data)
+		               	<?php $no = $kontak ?>
+                    		@foreach($kontak as $data)
+                      	<?php $no++ ?>
 							<tr>
-								<td>{{$data->id}}</td>
+								<td>{{ ++$i }}</td>
 								<td>{{$data->name}}</td>
 								<td>{{$data->email}}</td>
 								<td>{{$data->phone_number}}</td>
 								<td>{{$data->message}}</td>
 								<td>
-									
-
 									<div class="btn-group-center">
-										<form method="POST" action="/admin/kontak/{{$data->id}}/delete">
+										<form id="form{{$data->id}}" method="POST" action="/admin/kontak/{{$data->id}}/delete">
 					                	{{method_field('DELETE')}}
-					                	<button type="submit" class="btn btn-danger" href="/admin/Kontak/{{$data->id}}/delete"><i class="fa fa-trash"></i></button>
+					                	<button id="del{{$data->id}}" type="button" class="btn btn-danger" href="/admin/Kontak/{{$data->id}}/delete"><i class="fa fa-trash"></i></button>
 					                	<input type="hidden" name="delete" value="delete">{{csrf_field()}}
 					                 	</form>
 				                    </div>
@@ -62,6 +62,28 @@
     	</div>
 	</div>
 </section>
+
+<script type="text/javascript" src="{{asset('adminpage/sweetalert.min.js')}}"></script>
+<script type="">
+  @foreach ($kontak as $data)
+    $('button#del{{$data->id}}').on('click', function(){
+      swal({
+        title: "Anda Yakin?",
+        text: "Data yang terhapus tidak dapat dikembalikan!",
+        type: "warning",
+        showCancelButton: true,
+        cancelButtonText: "Tidak",
+        confirmButtonClass: "btn-danger",
+        confirmButtonText: "Ya",
+        closeOnConfirm: false
+      },
+      function (){
+        $("#form{{$data->id}}").submit();
+      });
+    })
+    @endforeach
+</script>
+
 
 			@include('admin.layout.partial.data_table')
 @endsection
